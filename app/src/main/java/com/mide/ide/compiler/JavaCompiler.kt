@@ -107,7 +107,9 @@ class JavaCompiler {
 
         val requestor = ICompilerRequestor { result ->
             result.classFiles.forEach { classFile ->
-                val className = classFile.fileName().joinToString(File.separator) { String(it) }
+                val className = String(classFile.fileName)
+                    .replace('/', File.separatorChar)
+                    .removeSuffix(".class")
                 val outputFile = File(classesOutputDir, "$className.class")
                 outputFile.parentFile?.mkdirs()
                 outputFile.writeBytes(classFile.bytes)

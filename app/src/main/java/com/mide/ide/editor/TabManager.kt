@@ -2,15 +2,6 @@ package com.mide.ide.editor
 
 import java.io.File
 
-data class EditorTab(
-    val file: File,
-    var content: String = "",
-    var scrollY: Int = 0,
-    var cursorLine: Int = 0,
-    var cursorColumn: Int = 0,
-    var isModified: Boolean = false
-)
-
 class TabManager {
 
     private val _tabs = mutableListOf<EditorTab>()
@@ -30,7 +21,6 @@ class TabManager {
             Pair(existingIndex, false)
         } else {
             if (_tabs.size >= maxTabs) {
-                // Close the oldest unmodified tab
                 val closeable = _tabs.indexOfFirst { !it.isModified && it != activeTab }
                 if (closeable >= 0) {
                     _tabs.removeAt(closeable)
@@ -77,7 +67,7 @@ class TabManager {
     fun saveFile(index: Int): Boolean {
         val tab = _tabs.getOrNull(index) ?: return false
         return try {
-            tab.file.writeText(tab.content)
+            tab.file.writeText(tab.content ?: "")
             tab.isModified = false
             true
         } catch (e: Exception) {

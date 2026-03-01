@@ -1,11 +1,8 @@
 package com.mide.ide.editor
 
 import android.content.Context
-import android.view.LayoutInflater
-import android.view.View
 import android.widget.FrameLayout
 import com.google.android.material.tabs.TabLayout
-import com.mide.ide.utils.FileUtils
 import io.github.rosemoe.sora.event.ContentChangeEvent
 import io.github.rosemoe.sora.langs.java.JavaLanguage
 import io.github.rosemoe.sora.widget.CodeEditor
@@ -64,7 +61,7 @@ class EditorManager(
     private fun addTabToLayout(tab: EditorTab) {
         val newTab = tabLayout.newTab().apply {
             text = tab.title
-            setTag(tab.file.absolutePath)
+            tag = tab.file.absolutePath
         }
         tabLayout.addTab(newTab)
     }
@@ -97,10 +94,10 @@ class EditorManager(
 
     private fun createEditor(tab: EditorTab): CodeEditor {
         return CodeEditor(context).apply {
-            colorScheme = SchemeDarcula()
+            setColorScheme(SchemeDarcula())
             setEditorLanguage(JavaLanguage())
-            isLineNumberEnabled = true
-            isWordwrap = false
+            setLineNumberEnabled(true)
+            setWordwrap(false)
             tabWidth = 4
 
             tab.content?.let { setText(it) }
@@ -111,7 +108,6 @@ class EditorManager(
 
             var debounceJob: Job? = null
             subscribeEvent(ContentChangeEvent::class.java) { _, _ ->
-                val fileName = tab.file.name
                 tab.isModified = true
                 updateTabTitle(tab)
                 debounceJob?.cancel()
@@ -150,7 +146,7 @@ class EditorManager(
         if (activeTab == tab) {
             activeTab = null
             if (tabs.isNotEmpty()) {
-                switchToTab(tabs.minOf(tabs.size - 1, index).let { tabs[it] })
+                switchToTab(tabs[minOf(tabs.size - 1, index)])
             } else {
                 container.removeAllViews()
             }
@@ -166,12 +162,12 @@ class EditorManager(
 
     fun setDarkTheme(dark: Boolean) {
         editors.values.forEach { editor ->
-            editor.colorScheme = if (dark) SchemeDarcula() else EditorColorScheme()
+            editor.setColorScheme(if (dark) SchemeDarcula() else EditorColorScheme())
         }
     }
 
     fun setFontSize(sp: Float) {
-        editors.values.forEach { it.textSizePx = sp * context.resources.displayMetrics.scaledDensity }
+        editors.values.forEach { it.setTextSizePx(sp * context.resources.displayMetrics.scaledDensity) }
     }
 
     fun getCurrentContent(): String? {

@@ -6,8 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.HorizontalScrollView
-import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.FileProvider
@@ -18,12 +16,11 @@ import androidx.lifecycle.lifecycleScope
 import com.mide.ide.MIDEApplication
 import com.mide.ide.R
 import com.mide.ide.compiler.BuildResult
+import com.mide.ide.compiler.ErrorSeverity
 import com.mide.ide.databinding.FragmentEditorBinding
 import io.github.rosemoe.sora.event.ContentChangeEvent
 import io.github.rosemoe.sora.langs.java.JavaLanguage
-import io.github.rosemoe.sora.widget.CodeEditor
 import io.github.rosemoe.sora.widget.schemes.SchemeDarcula
-import io.github.rosemoe.sora.widget.schemes.SchemeGitHub
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -52,25 +49,21 @@ class EditorFragment : Fragment() {
 
     private fun setupEditor() {
         binding.codeEditor.apply {
-            colorScheme = SchemeDarcula()
+            setColorScheme(SchemeDarcula())
             setEditorLanguage(JavaLanguage())
-            isLineNumberEnabled = true
-            typefaceText = android.graphics.Typeface.MONOSPACE
-            textSizePx = 42f
-            isWordwrap = false
+            setLineNumberEnabled(true)
+            setTypefaceText(android.graphics.Typeface.MONOSPACE)
+            setTextSizePx(42f)
+            setWordwrap(false)
 
-            subscribeEvent(ContentChangeEvent::class.java) { event, _ ->
+            subscribeEvent(ContentChangeEvent::class.java) { _, _ ->
                 val content = text.toString()
                 editorViewModel.onContentChanged(content)
 
-                // Debounced auto-save
                 autoSaveJob?.cancel()
                 autoSaveJob = viewLifecycleOwner.lifecycleScope.launch {
                     delay(debounceDelay * 5)
-                    val prefs = MIDEApplication.getInstance().appPreferences
-                    prefs.autoSave.collect { autoSave ->
-                        if (autoSave) editorViewModel.saveCurrentFile()
-                    }
+                    editorViewModel.saveCurrentFile()
                 }
             }
         }
@@ -142,7 +135,7 @@ class EditorFragment : Fragment() {
                     is BuildResult.Failure -> {
                         binding.btnInstallApk.isVisible = false
                         showBuildStatus("Build failed: ${result.errors.size} error(s)", success = false)
-                        highlightErrors(result.errors)
+                        highlightErrors(result)
                     }
                 }
             }
@@ -150,11 +143,8 @@ class EditorFragment : Fragment() {
     }
 
     private fun loadTabContent(tab: EditorTab) {
-        binding.codeEditor.setText(tab.content)
-        binding.codeEditor.setEditorLanguage(
-            if (tab.file.extension == "kt") JavaLanguage() else JavaLanguage()
-        )
-        // Restore scroll position
+        binding.codeEditor.setText(tab.content ?: "")
+        binding.codeEditor.setEditorLanguage(JavaLanguage())
         binding.codeEditor.scrollTo(0, tab.scrollY)
     }
 
@@ -186,20 +176,18 @@ class EditorFragment : Fragment() {
         binding.textBuildStatus.isVisible = true
     }
 
-    private fun highlightErrors(errors: List<BuildResult.BuildError>) {
-        // Jump to first error if it's in the current file
+    private fun highlightErrors(result: BuildResult.Failure) {
         val currentFile = editorViewModel.tabManager.activeTab?.file ?: return
-        val firstError = errors.firstOrNull {
-            it.severity == BuildResult.BuildError.Severity.ERROR &&
-                    it.file == currentFile.absolutePath
+        val firstError = result.errors.firstOrNull {
+            it.severity == ErrorSeverity.ERROR && it.file == currentFile.absolutePath
         }
         if (firstError != null && firstError.line > 0) {
-            binding.codeEditor.jumpToLine(firstError.line - 1)
+            binding.codeEditor.setSelection(firstError.line - 1, 0)
         }
     }
 
     private fun installLatestApk() {
-        val project = MIDEApplication.getInstance().projectManager.currentProject ?: return
+        val project = MIDEApplication.get().projectManager.currentProject ?: return
         val apkFile = project.apkFile
         if (!apkFile.exists()) {
             Toast.makeText(context, "No APK found. Build first.", Toast.LENGTH_SHORT).show()

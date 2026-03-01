@@ -37,7 +37,7 @@ class EditorViewModel(application: Application) : AndroidViewModel(application) 
     val fileOpenEvent: SharedFlow<EditorTab> = _fileOpenEvent
 
     fun openFile(file: File) {
-        val (index, isNew) = tabManager.openFile(file)
+        tabManager.openFile(file)
         refreshTabs()
         viewModelScope.launch {
             tabManager.activeTab?.let { _fileOpenEvent.emit(it) }
@@ -76,10 +76,9 @@ class EditorViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     fun startBuild(forceClean: Boolean = false) {
-        val project = MIDEApplication.getInstance().projectManager.currentProject ?: return
+        val project = MIDEApplication.get().projectManager.currentProject ?: return
         if (_isBuilding.value) return
 
-        // Auto-save all files before building
         tabManager.saveAll()
 
         viewModelScope.launch(Dispatchers.Default) {
