@@ -25,10 +25,10 @@ object FileUtils {
     fun isBinaryFile(file: File): Boolean = !isTextFile(file)
 
     fun formatFileSize(bytes: Long): String = when {
-        bytes < 1024 -> "${"$"}bytes B"
-        bytes < 1024 * 1024 -> "${"$"}{"%.1f".format(bytes / 1024.0)} KB"
-        bytes < 1024 * 1024 * 1024 -> "${"$"}{"%.1f".format(bytes / (1024.0 * 1024))} MB"
-        else -> "${"$"}{"%.1f".format(bytes / (1024.0 * 1024 * 1024))} GB"
+        bytes < 1024 -> "$bytes B"
+        bytes < 1024 * 1024 -> "${"%.1f".format(bytes / 1024.0)} KB"
+        bytes < 1024 * 1024 * 1024 -> "${"%.1f".format(bytes / (1024.0 * 1024))} MB"
+        else -> "${"%.1f".format(bytes / (1024.0 * 1024 * 1024))} GB"
     }
 
     fun deleteRecursively(dir: File): Boolean = dir.deleteRecursively()
@@ -43,7 +43,7 @@ object FileUtils {
     } catch (e: Exception) { null }
 
     fun writeAtomically(file: File, content: String) {
-        val tmp = File(file.parentFile, "${"$"}{file.name}.tmp")
+        val tmp = File(file.parentFile, "${file.name}.tmp")
         tmp.writeText(content)
         tmp.renameTo(file)
     }

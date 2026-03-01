@@ -1,5 +1,6 @@
 package com.mide.ide.compiler
 
+import com.mide.ide.MIDEApplication
 import com.mide.ide.project.Project
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -18,6 +19,11 @@ class BuildEngine(private val project: Project) {
     private val incrementalTracker = IncrementalTracker(
         File(project.intermediatesDir, "build_cache.json")
     )
+
+    private val toolsDir get() = MIDEApplication.get().toolsDir
+    private val d8Binary get() = File(toolsDir, "d8")
+    private val aapt2Binary get() = File(toolsDir, "aapt2")
+    private val androidJar get() = File(toolsDir, "android.jar")
 
     suspend fun build(
         forceClean: Boolean = false,
@@ -40,19 +46,17 @@ class BuildEngine(private val project: Project) {
 
             project.ensureBuildDirs()
 
-            // Gather all Java source files
             val allSources = project.sourceDir.walkTopDown()
                 .filter { it.isFile && it.extension == "java" }
                 .toList()
 
             if (allSources.isEmpty()) {
                 return@withContext BuildResult.Failure(
-                    errors = listOf(BuildResult.BuildError("", 0, 0, "No Java source files found in project.", BuildResult.BuildError.Severity.ERROR)),
-                    log = logBuffer.toString()
+                    errors = listOf(BuildError("", 0, 0, "No Java source files found in project.", ErrorSeverity.ERROR)),
+                    durationMs = System.currentTimeMillis() - startTime
                 )
             }
 
-            // Incremental: only compile changed files
             val changedFiles = if (incrementalTracker.hasAnyCache()) {
                 incrementalTracker.getChangedFiles(allSources).also {
                     if (it.isEmpty()) {
@@ -70,10 +74,18 @@ class BuildEngine(private val project: Project) {
             if (changedFiles.isNotEmpty()) {
                 _buildState.value = BuildState.COMPILING_JAVA
                 log("=== Step 1/5: Java Compilation ===")
-                val javaResult = JavaCompiler(project).compile(allSources, log)
+                val javaResult = JavaCompiler().compile(
+                    sourceFiles = allSources,
+                    classesOutputDir = project.classesDir,
+                    classpath = listOf(androidJar),
+                    onLog = log
+                )
                 if (!javaResult.success) {
                     _buildState.value = BuildState.DONE
-                    return@withContext BuildResult.Failure(javaResult.errors, logBuffer.toString())
+                    return@withContext BuildResult.Failure(
+                        errors = javaResult.errors,
+                        durationMs = System.currentTimeMillis() - startTime
+                    )
                 }
                 incrementalTracker.markFilesAsCompiled(changedFiles)
             }
@@ -81,71 +93,90 @@ class BuildEngine(private val project: Project) {
             // Step 2: DEX compilation
             _buildState.value = BuildState.COMPILING_DEX
             log("=== Step 2/5: DEX Compilation ===")
-            val dexResult = DexCompiler(project).compile(log)
+            val classFiles = project.classesDir.walkTopDown()
+                .filter { it.isFile && it.extension == "class" }
+                .toList()
+            val dexResult = DexCompiler(d8Binary).compile(
+                classFiles = classFiles,
+                outputDir = project.dexDir,
+                minSdk = project.minSdk,
+                onLog = log
+            )
             if (!dexResult.success) {
                 _buildState.value = BuildState.DONE
                 return@withContext BuildResult.Failure(
-                    listOf(BuildResult.BuildError("dex", 0, 0, dexResult.log, BuildResult.BuildError.Severity.ERROR)),
-                    logBuffer.toString()
+                    errors = listOf(BuildError("dex", 0, 0, dexResult.error ?: "DEX compilation failed", ErrorSeverity.ERROR)),
+                    durationMs = System.currentTimeMillis() - startTime
                 )
             }
 
             // Step 3: Resource compilation
             _buildState.value = BuildState.COMPILING_RESOURCES
             log("=== Step 3/5: Resource Compilation ===")
-            val resourceResult = ResourceCompiler(project).compile(log)
+            val resourceResult = ResourceCompiler(aapt2Binary, androidJar).compileAndLink(
+                manifestFile = project.manifestFile,
+                resDir = project.resDir,
+                outputDir = project.compiledResDir,
+                packageName = project.packageName,
+                onLog = log
+            )
             if (!resourceResult.success) {
                 _buildState.value = BuildState.DONE
                 return@withContext BuildResult.Failure(
-                    listOf(BuildResult.BuildError("res", 0, 0, resourceResult.log, BuildResult.BuildError.Severity.ERROR)),
-                    logBuffer.toString()
+                    errors = listOf(BuildError("res", 0, 0, resourceResult.error ?: "Resource compilation failed", ErrorSeverity.ERROR)),
+                    durationMs = System.currentTimeMillis() - startTime
                 )
             }
 
             // Step 4: APK packaging
             _buildState.value = BuildState.PACKAGING
             log("=== Step 4/5: APK Packaging ===")
-            val packageResult = ApkPackager(project).packageApk(resourceResult.linkedApk, log)
+            val packageResult = ApkPackager().packageApk(
+                dexFile = dexResult.dexFile!!,
+                resourcesApk = resourceResult.linkedApk!!,
+                nativeLibsDir = null,
+                outputDir = project.outputDir,
+                onLog = log
+            )
             if (!packageResult.success) {
                 _buildState.value = BuildState.DONE
                 return@withContext BuildResult.Failure(
-                    listOf(BuildResult.BuildError("apk", 0, 0, packageResult.log, BuildResult.BuildError.Severity.ERROR)),
-                    logBuffer.toString()
+                    errors = listOf(BuildError("apk", 0, 0, packageResult.error ?: "APK packaging failed", ErrorSeverity.ERROR)),
+                    durationMs = System.currentTimeMillis() - startTime
                 )
             }
 
             // Step 5: APK signing
             _buildState.value = BuildState.SIGNING
             log("=== Step 5/5: APK Signing ===")
-            val signResult = ApkSigner(project).sign(
+            val signResult = ApkSigner().sign(
                 unsignedApk = packageResult.unsignedApk!!,
-                outputApk = project.apkFile,
+                outputDir = project.outputDir,
                 onLog = log
             )
 
             _buildState.value = BuildState.DONE
+            val duration = System.currentTimeMillis() - startTime
 
             return@withContext if (signResult.success) {
-                val duration = System.currentTimeMillis() - startTime
                 log("=== Build Successful in ${duration}ms ===")
                 log("APK: ${signResult.signedApk?.absolutePath}")
                 BuildResult.Success(
                     apkFile = signResult.signedApk!!,
-                    durationMs = duration,
-                    log = logBuffer.toString()
+                    durationMs = duration
                 )
             } else {
                 BuildResult.Failure(
-                    listOf(BuildResult.BuildError("signing", 0, 0, signResult.log, BuildResult.BuildError.Severity.ERROR)),
-                    logBuffer.toString()
+                    errors = listOf(BuildError("signing", 0, 0, signResult.error ?: "Signing failed", ErrorSeverity.ERROR)),
+                    durationMs = duration
                 )
             }
         } catch (e: Exception) {
             _buildState.value = BuildState.DONE
             log("=== Build Failed: ${e.message} ===")
             BuildResult.Failure(
-                listOf(BuildResult.BuildError("", 0, 0, e.message ?: "Unknown error", BuildResult.BuildError.Severity.ERROR)),
-                logBuffer.toString()
+                errors = listOf(BuildError("", 0, 0, e.message ?: "Unknown error", ErrorSeverity.ERROR)),
+                durationMs = System.currentTimeMillis() - startTime
             )
         }
     }
