@@ -17,6 +17,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Downloads a single MediaPipe .task model file from HuggingFace.
  * Much simpler than the MLC approach — just one file, no shards.
  *
+ * Destination: /sdcard/locai/model/model.task
  */
 public class ModelDownloader {
 

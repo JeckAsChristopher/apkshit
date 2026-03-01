@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/bg_dark">
 
-    <!-- ── Top Bar ─────────────────────────────────────────────── -->
+    <!-- Top bar -->
     <RelativeLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:background="@color/bg_surface"
-        android:layout_alignParentTop="true">
+        android:background="@color/bg_surface">
 
-        <!-- Logo text -->
         <TextView
             android:id="@+id/tvAppName"
             android:layout_width="wrap_content"
@@ -27,7 +26,6 @@
             android:fontFamily="sans-serif-black"
             android:letterSpacing="0.15"/>
 
-        <!-- Clear button -->
         <ImageButton
             android:id="@+id/btnClear"
             android:layout_width="40dp"
@@ -40,7 +38,6 @@
             android:tint="@color/text_secondary"
             android:contentDescription="Clear memory"/>
 
-        <!-- Memory badge -->
         <TextView
             android:id="@+id/tvMemoryBadge"
             android:layout_width="wrap_content"
@@ -51,22 +48,49 @@
             android:background="@drawable/bg_badge"
             android:textColor="@color/accent"
             android:textSize="11sp"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
             android:text="0 memories"
             android:visibility="invisible"/>
 
     </RelativeLayout>
 
-    <!-- Thin divider -->
+    <!-- Divider -->
     <View
-        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/divider"
-        android:layout_below="@id/topBar"/>
+        android:background="@color/divider"/>
 
-    <!-- ── Input Row (anchored to bottom) ────────────────────── -->
+    <!-- Chat area — fills all remaining space -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:clipToPadding="false"/>
+
+        <TextView
+            android:id="@+id/emptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="How can I help?"
+            android:textColor="@color/text_secondary"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <!-- Input row — pinned to bottom -->
     <LinearLayout
         android:id="@+id/inputContainer"
         android:layout_width="match_parent"
@@ -74,9 +98,10 @@
         android:background="@color/bg_surface"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="12dp"
-        android:paddingVertical="10dp"
-        android:layout_alignParentBottom="true">
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <EditText
             android:id="@+id/etInput"
@@ -88,8 +113,10 @@
             android:textColorHint="@color/text_hint"
             android:textColor="@color/white"
             android:textSize="15sp"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
             android:maxLines="5"
             android:inputType="textMultiLine|textCapSentences"
             android:imeOptions="actionSend"/>
@@ -108,57 +135,4 @@
 
     </LinearLayout>
 
-    <!-- ── Chat RecyclerView (fills remaining space) ─────────── -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/divider"
-        android:layout_above="@id/inputContainer"
-        android:paddingVertical="12dp"
-        android:clipToPadding="false"/>
-
-    <!-- Empty state (centered over RecyclerView area) -->
-    <LinearLayout
-        android:id="@+id/emptyState"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:visibility="gone"
-        android:layout_below="@id/divider"
-        android:layout_above="@id/inputContainer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="How can I help?"
-            android:textColor="@color/text_secondary"
-            android:textSize="20sp"
-            android:fontFamily="sans-serif-medium"/>
-
-    </LinearLayout>
-
-    <!-- ── Loading Overlay ───────────────────────────────────── -->
-    <FrameLayout
-        android:id="@+id/loadingOverlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/divider"
-        android:layout_above="@id/inputContainer"
-        android:background="#AA000000"
-        android:visibility="gone">
-
-        <TextView
-            android:id="@+id/tvLoadingStatus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"/>
-
-    </FrameLayout>
-
-</RelativeLayout>
+</LinearLayout>

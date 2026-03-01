@@ -1,7 +1,7 @@
 package com.locai.app;
 
-import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -17,26 +17,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView    recyclerView;
-    private ChatAdapter     adapter;
-    private EditText        etInput;
-    private ImageButton     btnSend;
-    private ImageButton     btnClear;
-    private TextView        tvMemoryBadge;
-    private View            loadingOverlay;
-    private TextView        tvLoadingStatus;
+    private RecyclerView  recyclerView;
+    private ChatAdapter   adapter;
+    private EditText      etInput;
+    private ImageButton   btnSend;
+    private ImageButton   btnClear;
+    private TextView      tvMemoryBadge;
 
-    private MemoryManager   memory;
-    private StringBuilder   streamBuffer = new StringBuilder();
-    private boolean         isGenerating = false;
+    private MemoryManager memory;
+    private StringBuilder streamBuffer = new StringBuilder();
+    private boolean       isGenerating = false;
 
-    private final Handler   mainHandler = new Handler(Looper.getMainLooper());
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,23 +45,37 @@ public class MainActivity extends AppCompatActivity {
         setupButtons();
 
         memory = MemoryManager.getInstance(this);
+
+        // Guard: if engine isn't loaded (e.g. user navigated here directly
+        // or process was killed and resumed), bounce back to splash.
+        if (!LLMEngine.getInstance().isReady()) {
+            redirectToSplash();
+            return;
+        }
+
         loadHistory();
+    }
+
+    // ─── Guard ───────────────────────────────────────────────────────────────
+
+    private void redirectToSplash() {
+        startActivity(new Intent(this, SplashActivity.class)
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK));
+        finish();
     }
 
     // ─── View binding ────────────────────────────────────────────────────────
 
     private void bindViews() {
-        recyclerView    = findViewById(R.id.recyclerView);
-        etInput         = findViewById(R.id.etInput);
-        btnSend         = findViewById(R.id.btnSend);
-        btnClear        = findViewById(R.id.btnClear);
-        tvMemoryBadge   = findViewById(R.id.tvMemoryBadge);
-        loadingOverlay  = findViewById(R.id.loadingOverlay);
-        tvLoadingStatus = findViewById(R.id.tvLoadingStatus);
+        recyclerView  = findViewById(R.id.recyclerView);
+        etInput       = findViewById(R.id.etInput);
+        btnSend       = findViewById(R.id.btnSend);
+        btnClear      = findViewById(R.id.btnClear);
+        tvMemoryBadge = findViewById(R.id.tvMemoryBadge);
     }
 
     private void setupRecyclerView() {
-        adapter      = new ChatAdapter();
+        adapter = new ChatAdapter();
         LinearLayoutManager lm = new LinearLayoutManager(this);
         lm.setStackFromEnd(true);
         recyclerView.setLayoutManager(lm);
@@ -89,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupButtons() {
         btnSend.setOnClickListener(v -> sendMessage());
-
         btnClear.setOnClickListener(v -> confirmClear());
     }
 
@@ -99,9 +108,7 @@ public class MainActivity extends AppCompatActivity {
         List<Message> history = memory.loadAll();
         adapter.setMessages(history);
         updateMemoryBadge();
-        if (!history.isEmpty()) {
-            recyclerView.post(this::scrollToBottom);
-        }
+        if (!history.isEmpty()) recyclerView.post(this::scrollToBottom);
     }
 
     // ─── Send message ────────────────────────────────────────────────────────
@@ -110,27 +117,29 @@ public class MainActivity extends AppCompatActivity {
         String input = etInput.getText().toString().trim();
         if (input.isEmpty() || isGenerating) return;
 
-        // Clear input
+        // Re-check engine is still ready (could have been killed by OS)
+        if (!LLMEngine.getInstance().isReady()) {
+            Toast.makeText(this, "Model not loaded — restarting…", Toast.LENGTH_SHORT).show();
+            redirectToSplash();
+            return;
+        }
+
         etInput.setText("");
         isGenerating = true;
         btnSend.setEnabled(false);
 
-        // Add user message to UI + DB
         Message userMsg = new Message(Message.ROLE_USER, input);
         memory.save(userMsg);
         adapter.addMessage(userMsg);
         updateMemoryBadge();
         scrollToBottom();
 
-        // Show typing indicator
         adapter.addTypingIndicator();
         scrollToBottom();
 
-        // Load recent history as context
         List<Message> context = memory.loadLastN(40);
         streamBuffer.setLength(0);
 
-        // Generate
         LLMEngine.getInstance().generate(context, input, new LLMEngine.GenerateCallback() {
             @Override
             public void onToken(String token) {
@@ -144,7 +153,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(String fullResponse) {
                 mainHandler.post(() -> {
-                    // Persist AI response
                     Message aiMsg = new Message(Message.ROLE_ASSISTANT, fullResponse);
                     memory.save(aiMsg);
                     adapter.updateLastAiMessage(fullResponse);
@@ -158,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onError(String error) {
                 mainHandler.post(() -> {
-                    adapter.updateLastAiMessage("⚠ " + error);
+                    adapter.updateLastAiMessage("\u26A0 " + error);
                     isGenerating = false;
                     btnSend.setEnabled(true);
                     Toast.makeText(MainActivity.this, error, Toast.LENGTH_LONG).show();
@@ -172,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
     private void confirmClear() {
         new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
                 .setTitle("Clear Memory?")
-                .setMessage("This will delete all conversation history permanently. LOCAI will forget everything.")
+                .setMessage("This will delete all conversation history permanently.")
                 .setPositiveButton("Clear", (d, w) -> {
                     memory.clearAll();
                     adapter.setMessages(new java.util.ArrayList<>());
@@ -203,9 +211,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void animateSendButton(boolean hasText) {
         float scale = hasText ? 1f : 0.85f;
-        btnSend.animate()
-                .scaleX(scale).scaleY(scale)
-                .setDuration(150)
-                .start();
+        btnSend.animate().scaleX(scale).scaleY(scale).setDuration(150).start();
     }
 }

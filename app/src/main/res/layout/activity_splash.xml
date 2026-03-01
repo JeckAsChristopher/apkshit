@@ -5,16 +5,16 @@
     android:layout_height="match_parent"
     android:background="@color/bg_dark">
 
-    <!-- Ambient glow (decorative, centered slightly above middle) -->
+    <!-- Ambient glow -->
     <View
         android:id="@+id/glowView"
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:background="@drawable/bg_glow"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="60dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
-    <!-- Logo + tagline block, centered slightly above middle -->
+    <!-- Logo + tagline — centered -->
     <LinearLayout
         android:id="@+id/logoContainer"
         android:layout_width="wrap_content"
@@ -52,13 +52,14 @@
 
     </LinearLayout>
 
-    <!-- Bottom status + progress bar -->
+    <!-- Status + progress — pinned to bottom -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:paddingHorizontal="48dp"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp"
         android:paddingBottom="56dp"
         android:layout_alignParentBottom="true">
 
@@ -97,7 +98,6 @@
                 android:layout_height="8dp"
                 android:background="@drawable/bg_dot_accent"
                 android:alpha="0.2"/>
-
         </LinearLayout>
 
         <ProgressBar

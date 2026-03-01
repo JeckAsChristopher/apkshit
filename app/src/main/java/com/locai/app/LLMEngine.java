@@ -21,7 +21,7 @@ public class LLMEngine {
 
     private static final String TAG = "LOCAI_Engine";
 
-    public static final String MODEL_PATH = "/storage/emulated/0/locai/model";
+    public static final String MODEL_PATH = "/sdcard/locai/model";
     public static final String MODEL_FILE = MODEL_PATH + "/model.gguf";
 
     // llama.cpp inference config

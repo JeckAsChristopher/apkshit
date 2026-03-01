@@ -19,6 +19,10 @@ import java.io.File;
 
 public class SplashActivity extends AppCompatActivity {
 
+    // Minimum sane model file size — 100 MB.
+    // A complete Q4 GGUF is always > 500 MB. This catches partial downloads.
+    private static final long MIN_MODEL_BYTES = 100L * 1024 * 1024;
+
     private TextView    tvStatus;
     private TextView    tvTagline;
     private ProgressBar progressBar;
@@ -42,50 +46,38 @@ public class SplashActivity extends AppCompatActivity {
         new Handler(Looper.getMainLooper()).postDelayed(this::startChecks, 900);
     }
 
+    // ─── Checks ──────────────────────────────────────────────────────────────
+
     private void startChecks() {
         if (!StorageChecker.hasSufficientStorage()) {
             showStorageError(StorageChecker.getAvailableBytes());
             return;
         }
-        if (!modelFileExists()) {
-            showNoWeightsDialog();
+
+        File model = new File(ModelDownloader.MODEL_FILE);
+
+        if (!model.exists()) {
+            showNoWeightsDialog("No model file found at:\n" + ModelDownloader.MODEL_FILE);
             return;
         }
+
+        if (model.length() < MIN_MODEL_BYTES) {
+            // Incomplete download — delete it so installer starts fresh
+            model.delete();
+            showNoWeightsDialog(
+                "Incomplete model file detected (" +
+                StorageChecker.formatBytes(model.length()) + ").\n\n" +
+                "The previous download was interrupted. Please download again."
+            );
+            return;
+        }
+
         progressBar.setVisibility(View.VISIBLE);
         startDotAnimation();
         loadModel();
     }
 
-    private boolean modelFileExists() {
-        return new File(ModelDownloader.MODEL_FILE).exists();
-    }
-
-    private void showNoWeightsDialog() {
-        new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
-                .setTitle("No AI weights found")
-                .setMessage(
-                        "LOCAI needs an AI model to run.\n\n" +
-                        "No model was found at:\n" + ModelDownloader.MODEL_FILE +
-                        "\n\nYou can download one now — needs internet once, " +
-                        "then LOCAI runs fully offline forever."
-                )
-                .setPositiveButton("OK — Choose a model", (d, w) -> goToInstaller())
-                .setNegativeButton("Exit", (d, w) -> {
-                    finishAffinity();
-                    System.exit(0);
-                })
-                .setCancelable(false)
-                .show();
-    }
-
-    private void goToInstaller() {
-        getWindow().getDecorView().animate().alpha(0f).setDuration(250)
-                .withEndAction(() -> {
-                    startActivity(new Intent(this, ModelInstallActivity.class));
-                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-                    finish();
-                }).start();
-    }
+    // ─── Load ─────────────────────────────────────────────────────────────────
 
     private void loadModel() {
         tvStatus.setText("Loading model\u2026");
@@ -110,6 +102,8 @@ public class SplashActivity extends AppCompatActivity {
         });
     }
 
+    // ─── Navigation ───────────────────────────────────────────────────────────
+
     private void goToMain() {
         getWindow().getDecorView().animate().alpha(0f).setDuration(300)
                 .withEndAction(() -> {
@@ -119,24 +113,56 @@ public class SplashActivity extends AppCompatActivity {
                 }).start();
     }
 
-    private void showStorageError(long available) {
+    private void goToInstaller() {
+        // Delete bad/partial model file before going to installer
+        File model = new File(ModelDownloader.MODEL_FILE);
+        if (model.exists() && model.length() < MIN_MODEL_BYTES) model.delete();
+
+        getWindow().getDecorView().animate().alpha(0f).setDuration(250)
+                .withEndAction(() -> {
+                    startActivity(new Intent(this, ModelInstallActivity.class));
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                    finish();
+                }).start();
+    }
+
+    // ─── Dialogs ──────────────────────────────────────────────────────────────
+
+    private void showNoWeightsDialog(String message) {
         new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
-                .setTitle("\u26A0 Insufficient Storage")
-                .setMessage("LOCAI requires at least 1.6 GB free.\n\n" +
-                        "Available: " + StorageChecker.formatBytes(available) +
-                        "\nRequired:  1.6 GB")
-                .setPositiveButton("Exit", (d, w) -> { finishAffinity(); System.exit(1); })
-                .setCancelable(false).show();
+                .setTitle("No AI weights found")
+                .setMessage(message + "\n\nDownload a model now — needs internet once, " +
+                        "then LOCAI runs fully offline forever.")
+                .setPositiveButton("Download model", (d, w) -> goToInstaller())
+                .setNegativeButton("Exit", (d, w) -> { finishAffinity(); System.exit(0); })
+                .setCancelable(false)
+                .show();
     }
 
     private void showModelError(String error) {
         new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
                 .setTitle("Failed to Load Model")
-                .setMessage(error)
-                .setPositiveButton("Reinstall Model", (d, w) -> goToInstaller())
-                .setNegativeButton("Continue", (d, w) -> goToMain())
+                .setMessage(error + "\n\nThe model file may be corrupted. Try reinstalling.")
+                .setPositiveButton("Reinstall Model", (d, w) -> {
+                    // Delete the bad file so installer downloads fresh
+                    new File(ModelDownloader.MODEL_FILE).delete();
+                    goToInstaller();
+                })
+                .setNegativeButton("Continue anyway", (d, w) -> goToMain())
+                .setCancelable(false)
+                .show();
+    }
+
+    private void showStorageError(long available) {
+        new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
+                .setTitle("\u26A0 Insufficient Storage")
+                .setMessage("LOCAI requires at least 1.6 GB free.\n\n" +
+                        "Available: " + StorageChecker.formatBytes(available) + "\nRequired:  1.6 GB")
+                .setPositiveButton("Exit", (d, w) -> { finishAffinity(); System.exit(1); })
                 .setCancelable(false).show();
     }
+
+    // ─── Animations ───────────────────────────────────────────────────────────
 
     private void animateLogoIn() {
         logoContainer.setAlpha(0f);
