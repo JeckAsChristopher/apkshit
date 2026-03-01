@@ -102,7 +102,6 @@ bin/llama-tts: src/libllama.a
 bin/llama-tts: ggml/src/libggml.a
 bin/llama-tts: ggml/src/libggml-cpu.a
 bin/llama-tts: ggml/src/libggml-base.a
-bin/llama-tts: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-tts: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-tts: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-tts: /data/data/com.termux/files/usr/lib/libcrypto.so

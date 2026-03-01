@@ -101,7 +101,6 @@ bin/llama-quantize: src/libllama.a
 bin/llama-quantize: ggml/src/libggml.a
 bin/llama-quantize: ggml/src/libggml-cpu.a
 bin/llama-quantize: ggml/src/libggml-base.a
-bin/llama-quantize: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-quantize: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-quantize: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-quantize: /data/data/com.termux/files/usr/lib/libcrypto.so

@@ -101,7 +101,6 @@ bin/llama-cvector-generator: src/libllama.a
 bin/llama-cvector-generator: ggml/src/libggml.a
 bin/llama-cvector-generator: ggml/src/libggml-cpu.a
 bin/llama-cvector-generator: ggml/src/libggml-base.a
-bin/llama-cvector-generator: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-cvector-generator: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-cvector-generator: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-cvector-generator: /data/data/com.termux/files/usr/lib/libcrypto.so

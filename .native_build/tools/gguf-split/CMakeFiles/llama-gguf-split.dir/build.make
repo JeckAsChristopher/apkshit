@@ -101,7 +101,6 @@ bin/llama-gguf-split: src/libllama.a
 bin/llama-gguf-split: ggml/src/libggml.a
 bin/llama-gguf-split: ggml/src/libggml-cpu.a
 bin/llama-gguf-split: ggml/src/libggml-base.a
-bin/llama-gguf-split: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-gguf-split: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-gguf-split: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-gguf-split: /data/data/com.termux/files/usr/lib/libcrypto.so

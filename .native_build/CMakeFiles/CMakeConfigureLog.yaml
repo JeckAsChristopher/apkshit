@@ -792,8 +792,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -804,19 +804,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_db468/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_db468.dir/build.make CMakeFiles/cmTC_db468.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd'
-        Building C object CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4cb82/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4cb82.dir/build.make CMakeFiles/cmTC_4cb82.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR'
+        Building C object CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o
+        /data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         clang version 21.1.8
         Target: aarch64-unknown-linux-android24
         Thread model: posix
         InstalledDir: /data/data/com.termux/files/usr/bin
          (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+         "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24
         ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"
         ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"
@@ -826,15 +826,15 @@ events:
          /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android
          /data/data/com.termux/files/usr/bin/../../usr/include
         End of search list.
-        Linking C executable cmTC_db468
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db468.dir/link.txt --verbose=1
+        Linking C executable cmTC_4cb82
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cb82.dir/link.txt --verbose=1
         clang version 21.1.8
         Target: aarch64-unknown-linux-android24
         Thread model: posix
         InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_db468 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -o cmTC_db468
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd'
+         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4cb82 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
+        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -o cmTC_4cb82
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR'
         
       exitCode: 0
   -
@@ -867,19 +867,19 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd']
+        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_db468/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_db468.dir/build.make CMakeFiles/cmTC_db468.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd']
-        ignore line: [Building C object CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4cb82/fast]
+        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4cb82.dir/build.make CMakeFiles/cmTC_4cb82.dir/build]
+        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR']
+        ignore line: [Building C object CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: aarch64-unknown-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-6T4Mqd -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-LEbqqR -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o -x c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24]
         ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"]
         ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"]
@@ -889,13 +889,13 @@ events:
         ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android]
         ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_db468]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db468.dir/link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_4cb82]
+        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cb82.dir/link.txt --verbose=1]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: aarch64-unknown-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_db468 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
+        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4cb82 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
           arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
           arg [--sysroot=/data/data/com.termux/files/usr/bin/../..] ==> ignore
           arg [-EL] ==> ignore
@@ -913,11 +913,11 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_db468] ==> ignore
+          arg [cmTC_4cb82] ==> ignore
           arg [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o]
           arg [-L/data/data/com.termux/files/usr/bin/../../usr/lib] ==> dir [/data/data/com.termux/files/usr/bin/../../usr/lib]
           arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_db468.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4cb82.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
           arg [-ldl] ==> lib [dl]
@@ -958,8 +958,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -971,19 +971,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_313ab/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_313ab.dir/build.make CMakeFiles/cmTC_313ab.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D'
-        Building CXX object CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o
-        /data/data/com.termux/files/usr/bin/clang++   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4605e/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4605e.dir/build.make CMakeFiles/cmTC_4605e.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw'
+        Building CXX object CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o
+        /data/data/com.termux/files/usr/bin/clang++   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         clang version 21.1.8
         Target: aarch64-unknown-linux-android24
         Thread model: posix
         InstalledDir: /data/data/com.termux/files/usr/bin
          (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+         "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24
         ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"
         ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"
@@ -994,15 +994,15 @@ events:
          /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android
          /data/data/com.termux/files/usr/bin/../../usr/include
         End of search list.
-        Linking CXX executable cmTC_313ab
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_313ab.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_4605e
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4605e.dir/link.txt --verbose=1
         clang version 21.1.8
         Target: aarch64-unknown-linux-android24
         Thread model: posix
         InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_313ab /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC  -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_313ab
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D'
+         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4605e /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC  -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_4605e
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw'
         
       exitCode: 0
   -
@@ -1037,19 +1037,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D']
+        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_313ab/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_313ab.dir/build.make CMakeFiles/cmTC_313ab.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D']
-        ignore line: [Building CXX object CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/clang++   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4605e/fast]
+        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4605e.dir/build.make CMakeFiles/cmTC_4605e.dir/build]
+        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw']
+        ignore line: [Building CXX object CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/data/data/com.termux/files/usr/bin/clang++   -fPIC  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: aarch64-unknown-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-PDB08D -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-21" -cc1 -triple aarch64-unknown-linux-android24 -O2 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -enable-tlsdesc -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-070sRw -resource-dir /data/data/com.termux/files/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files/usr/bin/../.. -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/21/include -internal-isystem /data/data/com.termux/files/usr/bin/../../usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../include -internal-externc-isystem /data/data/com.termux/files/usr/bin/../../usr/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target aarch64-unknown-linux-android24]
         ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../usr/local/include"]
         ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/bin/../../include"]
@@ -1060,13 +1060,13 @@ events:
         ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include/aarch64-linux-android]
         ignore line: [ /data/data/com.termux/files/usr/bin/../../usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_313ab]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_313ab.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_4605e]
+        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4605e.dir/link.txt --verbose=1]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: aarch64-unknown-linux-android24]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_313ab /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
+        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_4605e /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
           arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
           arg [--sysroot=/data/data/com.termux/files/usr/bin/../..] ==> ignore
           arg [-EL] ==> ignore
@@ -1084,11 +1084,11 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/system/bin/linker64] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_313ab] ==> ignore
+          arg [cmTC_4605e] ==> ignore
           arg [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o]
           arg [-L/data/data/com.termux/files/usr/bin/../../usr/lib] ==> dir [/data/data/com.termux/files/usr/bin/../../usr/lib]
           arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_313ab.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_4605e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++_shared] ==> lib [c++_shared]
           arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
           arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
@@ -1656,8 +1656,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -1669,24 +1669,24 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_f9ad0/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_f9ad0.dir/build.make CMakeFiles/cmTC_f9ad0.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj'
-        Building C object CMakeFiles/cmTC_f9ad0.dir/src.c.o
-        /data/data/com.termux/files/usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -fPIC  -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_f9ad0.dir/src.c.o -MF CMakeFiles/cmTC_f9ad0.dir/src.c.o.d -o CMakeFiles/cmTC_f9ad0.dir/src.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj/src.c
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj/src.c:13:3: error: call to undeclared function 'pthread_cancel'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_6dea4/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_6dea4.dir/build.make CMakeFiles/cmTC_6dea4.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI'
+        Building C object CMakeFiles/cmTC_6dea4.dir/src.c.o
+        /data/data/com.termux/files/usr/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD  -fPIC  -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_6dea4.dir/src.c.o -MF CMakeFiles/cmTC_6dea4.dir/src.c.o.d -o CMakeFiles/cmTC_6dea4.dir/src.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI/src.c
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI/src.c:13:3: error: call to undeclared function 'pthread_cancel'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
            13 |   pthread_cancel(thread);
               |   ^
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj/src.c:13:3: note: did you mean 'pthread_once'?
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI/src.c:13:3: note: did you mean 'pthread_once'?
         /data/data/com.termux/files/usr/bin/../../usr/include/pthread.h:250:5: note: 'pthread_once' declared here
           250 | int pthread_once(pthread_once_t* _Nonnull __once, void (* _Nonnull __init_routine)(void));
               |     ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_f9ad0.dir/build.make:82: CMakeFiles/cmTC_f9ad0.dir/src.c.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-2DcRZj'
-        make: *** [Makefile:134: cmTC_f9ad0/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_6dea4.dir/build.make:82: CMakeFiles/cmTC_6dea4.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HoEViI'
+        make: *** [Makefile:134: cmTC_6dea4/fast] Error 2
         
       exitCode: 2
   -
@@ -1698,8 +1698,8 @@ events:
     checks:
       - "Check if compiler accepts -pthread"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -1711,17 +1711,17 @@ events:
       variable: "THREADS_HAVE_PTHREAD_ARG"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_34ef5/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_34ef5.dir/build.make CMakeFiles/cmTC_34ef5.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ'
-        Building C object CMakeFiles/cmTC_34ef5.dir/CheckForPthreads.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_34ef5.dir/CheckForPthreads.c.o -MF CMakeFiles/cmTC_34ef5.dir/CheckForPthreads.c.o.d -o CMakeFiles/cmTC_34ef5.dir/CheckForPthreads.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ/CheckForPthreads.c
-        Linking C executable cmTC_34ef5
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34ef5.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG CMakeFiles/cmTC_34ef5.dir/CheckForPthreads.c.o -o cmTC_34ef5  -pthread
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-oAyMDQ'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_1c078/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_1c078.dir/build.make CMakeFiles/cmTC_1c078.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY'
+        Building C object CMakeFiles/cmTC_1c078.dir/CheckForPthreads.c.o
+        /data/data/com.termux/files/usr/bin/clang   -fPIC  -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_1c078.dir/CheckForPthreads.c.o -MF CMakeFiles/cmTC_1c078.dir/CheckForPthreads.c.o.d -o CMakeFiles/cmTC_1c078.dir/CheckForPthreads.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY/CheckForPthreads.c
+        Linking C executable cmTC_1c078
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c078.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG CMakeFiles/cmTC_1c078.dir/CheckForPthreads.c.o -o cmTC_1c078  -pthread
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ap30JY'
         
       exitCode: 0
   -
@@ -1891,336 +1891,6 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    description: "Detecting C OpenMP compiler info"
-    directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_C_FLAGS: "-fPIC"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/cmake/"
-      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
-      cached: true
-      stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7'
-        
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_93e7f/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_93e7f.dir/build.make CMakeFiles/cmTC_93e7f.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7'
-        Building C object CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7/OpenMPTryFlag.c
-        Linking C executable cmTC_93e7f
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93e7f.dir/link.txt --verbose=1
-        clang version 21.1.8
-        Target: aarch64-unknown-linux-android24
-        Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_93e7f /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -lomp -L/data/data/com.termux/files/usr/lib /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/clang -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -v CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -o cmTC_93e7f
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:377 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    message: |
-      Parsed C OpenMP implicit link information from above output:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7']
-        ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_93e7f/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_93e7f.dir/build.make CMakeFiles/cmTC_93e7f.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7']
-        ignore line: [Building C object CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/clang   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IFiiP7/OpenMPTryFlag.c]
-        ignore line: [Linking C executable cmTC_93e7f]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93e7f.dir/link.txt --verbose=1]
-        ignore line: [clang version 21.1.8]
-        ignore line: [Target: aarch64-unknown-linux-android24]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_93e7f /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o -lomp -L/data/data/com.termux/files/usr/lib /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files/usr/bin/../..] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--no-rosegment] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/bin/../../usr/lib] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_93e7f] ==> ignore
-          arg [-L/data/data/com.termux/files/usr/bin/../../usr/lib] ==> dir [/data/data/com.termux/files/usr/bin/../../usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_93e7f.dir/OpenMPTryFlag.c.o] ==> ignore
-          arg [-lomp] ==> lib [omp]
-          arg [-L/data/data/com.termux/files/usr/lib] ==> dir [/data/data/com.termux/files/usr/lib]
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/data/data/com.termux/files/usr/bin/../../usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        collapse library dir [/data/data/com.termux/files/usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        implicit libs: [omp;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
-        implicit objs: []
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
-        implicit fwks: []
-      
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:395 (find_library)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    mode: "library"
-    variable: "OpenMP_omp_LIBRARY"
-    description: "Path to the omp library for OpenMP"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "omp"
-    candidate_directories:
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/system/lib64/"
-      - "/data/data/com.termux/files/usr/bin/"
-      - "/data/data/com.termux/files/home/android-sdk/cmdline-tools/latest/bin/"
-      - "/data/data/com.termux/files/home/android-sdk/platform-tools/"
-      - "/lib/"
-      - "/data/data/com.termux/files/usr/lib/"
-      - "/data/data/com.termux/files/usr/"
-    found: "/data/data/com.termux/files/usr/lib/libomp.a"
-    search_context:
-      ENV{PATH}:
-        - "/data/data/com.termux/files/usr/bin"
-        - "/data/data/com.termux/files/home/android-sdk/cmdline-tools/latest/bin"
-        - "/data/data/com.termux/files/home/android-sdk/platform-tools"
-        - "/data/data/com.termux/files/usr/bin"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/data/data/com.termux/files/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:333 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    description: "Detecting CXX OpenMP compiler info"
-    directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_CXX_FLAGS: "-fPIC"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/cmake/"
-      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
-    buildResult:
-      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
-      cached: true
-      stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS'
-        
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_8cfd5/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_8cfd5.dir/build.make CMakeFiles/cmTC_8cfd5.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS'
-        Building CXX object CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o
-        /data/data/com.termux/files/usr/bin/clang++   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS/OpenMPTryFlag.cpp
-        Linking CXX executable cmTC_8cfd5
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cfd5.dir/link.txt --verbose=1
-        clang version 21.1.8
-        Target: aarch64-unknown-linux-android24
-        Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_8cfd5 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -lc++_shared -lomp -L/data/data/com.termux/files/usr/lib /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -v CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -o cmTC_8cfd5
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS'
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:377 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    message: |
-      Parsed CXX OpenMP implicit link information from above output:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS']
-        ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_8cfd5/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_8cfd5.dir/build.make CMakeFiles/cmTC_8cfd5.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS']
-        ignore line: [Building CXX object CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/clang++   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-hX01BS/OpenMPTryFlag.cpp]
-        ignore line: [Linking CXX executable cmTC_8cfd5]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cfd5.dir/link.txt --verbose=1]
-        ignore line: [clang version 21.1.8]
-        ignore line: [Target: aarch64-unknown-linux-android24]
-        ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files/usr/bin/../.. -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --no-rosegment --hash-style=gnu -rpath=/data/data/com.termux/files/usr/bin/../../usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_8cfd5 /data/data/com.termux/files/usr/bin/../../usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/bin/../../usr/lib -L/system/lib64 CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o -lc++_shared -lomp -L/data/data/com.termux/files/usr/lib /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/bin/../../usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files/usr/bin/../..] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--no-rosegment] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/bin/../../usr/lib] ==> ignore
-          arg [--eh-frame-hdr] ==> ignore
-          arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
-          arg [-o] ==> ignore
-          arg [cmTC_8cfd5] ==> ignore
-          arg [-L/data/data/com.termux/files/usr/bin/../../usr/lib] ==> dir [/data/data/com.termux/files/usr/bin/../../usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_8cfd5.dir/OpenMPTryFlag.cpp.o] ==> ignore
-          arg [-lc++_shared] ==> lib [c++_shared]
-          arg [-lomp] ==> lib [omp]
-          arg [-L/data/data/com.termux/files/usr/lib] ==> dir [/data/data/com.termux/files/usr/lib]
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [-lm] ==> lib [m]
-          arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/21/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/data/data/com.termux/files/usr/bin/../../usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        collapse library dir [/data/data/com.termux/files/usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        implicit libs: [c++_shared;omp;-l:libunwind.a;dl;m;c;-l:libunwind.a;dl]
-        implicit objs: []
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
-        implicit fwks: []
-      
-      
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:574 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    description: "Detecting C OpenMP version"
-    directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_C_FLAGS: "-fPIC"
-      CMAKE_C_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/cmake/"
-      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
-    buildResult:
-      variable: "OpenMP_SPECTEST_C_"
-      cached: true
-      stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv'
-        
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_37742/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_37742.dir/build.make CMakeFiles/cmTC_37742.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv'
-        Building C object CMakeFiles/cmTC_37742.dir/OpenMPCheckVersion.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu11 -fPIE -MD -MT CMakeFiles/cmTC_37742.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_37742.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_37742.dir/OpenMPCheckVersion.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv/OpenMPCheckVersion.c
-        Linking C executable cmTC_37742
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37742.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang -fPIC -fopenmp=libomp -O2 -g -DNDEBUG CMakeFiles/cmTC_37742.dir/OpenMPCheckVersion.c.o -o cmTC_37742
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4s8kpv'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:574 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
-      - "ggml/src/ggml-cpu/CMakeLists.txt:76 (find_package)"
-      - "ggml/src/CMakeLists.txt:445 (ggml_add_cpu_backend_variant_impl)"
-    description: "Detecting CXX OpenMP version"
-    directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO"
-    cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
-      CMAKE_CXX_FLAGS: "-fPIC"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/cmake/"
-      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
-    buildResult:
-      variable: "OpenMP_SPECTEST_CXX_"
-      cached: true
-      stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO'
-        
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_a1977/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_a1977.dir/build.make CMakeFiles/cmTC_a1977.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO'
-        Building CXX object CMakeFiles/cmTC_a1977.dir/OpenMPCheckVersion.cpp.o
-        /data/data/com.termux/files/usr/bin/clang++   -fPIC -fopenmp=libomp -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_a1977.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_a1977.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_a1977.dir/OpenMPCheckVersion.cpp.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_a1977
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1977.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -fopenmp=libomp -O2 -g -DNDEBUG CMakeFiles/cmTC_a1977.dir/OpenMPCheckVersion.cpp.o -o cmTC_a1977
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-L5xuuO'
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
       - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
       - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
@@ -2229,8 +1899,8 @@ events:
     checks:
       - "Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2242,17 +1912,17 @@ events:
       variable: "GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_0172e/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_0172e.dir/build.make CMakeFiles/cmTC_0172e.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ'
-        Building CXX object CMakeFiles/cmTC_0172e.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -fPIC  -O2 -g -DNDEBUG -std=gnu++17 -fPIE   -mfp16-format=ieee -MD -MT CMakeFiles/cmTC_0172e.dir/src.cxx.o -MF CMakeFiles/cmTC_0172e.dir/src.cxx.o.d -o CMakeFiles/cmTC_0172e.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ/src.cxx
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_abdea/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_abdea.dir/build.make CMakeFiles/cmTC_abdea.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ'
+        Building CXX object CMakeFiles/cmTC_abdea.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -fPIC  -O2 -g -DNDEBUG -std=gnu++17 -fPIE   -mfp16-format=ieee -MD -MT CMakeFiles/cmTC_abdea.dir/src.cxx.o -MF CMakeFiles/cmTC_abdea.dir/src.cxx.o.d -o CMakeFiles/cmTC_abdea.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ/src.cxx
         clang++: error: unknown argument: '-mfp16-format=ieee'
-        make[1]: *** [CMakeFiles/cmTC_0172e.dir/build.make:82: CMakeFiles/cmTC_0172e.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-avd8UZ'
-        make: *** [Makefile:134: cmTC_0172e/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_abdea.dir/build.make:82: CMakeFiles/cmTC_abdea.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-fqmYiQ'
+        make: *** [Makefile:134: cmTC_abdea/fast] Error 2
         
       exitCode: 2
   -
@@ -2266,8 +1936,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_dotprod"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2279,17 +1949,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_dotprod_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_47f95/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_47f95.dir/build.make CMakeFiles/cmTC_47f95.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a'
-        Building CXX object CMakeFiles/cmTC_47f95.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_dotprod  -fPIC -mcpu=native+dotprod -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_47f95.dir/src.cxx.o -MF CMakeFiles/cmTC_47f95.dir/src.cxx.o.d -o CMakeFiles/cmTC_47f95.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a/src.cxx
-        Linking CXX executable cmTC_47f95
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47f95.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+dotprod -O2 -g -DNDEBUG CMakeFiles/cmTC_47f95.dir/src.cxx.o -o cmTC_47f95
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-8Ok73a'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_bd2ff/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_bd2ff.dir/build.make CMakeFiles/cmTC_bd2ff.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu'
+        Building CXX object CMakeFiles/cmTC_bd2ff.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_dotprod  -fPIC -mcpu=native+dotprod -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_bd2ff.dir/src.cxx.o -MF CMakeFiles/cmTC_bd2ff.dir/src.cxx.o.d -o CMakeFiles/cmTC_bd2ff.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu/src.cxx
+        Linking CXX executable cmTC_bd2ff
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd2ff.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+dotprod -O2 -g -DNDEBUG CMakeFiles/cmTC_bd2ff.dir/src.cxx.o -o cmTC_bd2ff
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dUeFDu'
         
       exitCode: 0
     runResult:
@@ -2310,8 +1980,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_nodotprod"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2323,17 +1993,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_nodotprod"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_44109/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_44109.dir/build.make CMakeFiles/cmTC_44109.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ'
-        Building CXX object CMakeFiles/cmTC_44109.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nodotprod  -fPIC -mcpu=native+nodotprod -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_44109.dir/src.cxx.o -MF CMakeFiles/cmTC_44109.dir/src.cxx.o.d -o CMakeFiles/cmTC_44109.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ/src.cxx
-        Linking CXX executable cmTC_44109
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44109.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nodotprod -O2 -g -DNDEBUG CMakeFiles/cmTC_44109.dir/src.cxx.o -o cmTC_44109
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Zlp1bJ'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_c70a0/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_c70a0.dir/build.make CMakeFiles/cmTC_c70a0.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T'
+        Building CXX object CMakeFiles/cmTC_c70a0.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nodotprod  -fPIC -mcpu=native+nodotprod -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_c70a0.dir/src.cxx.o -MF CMakeFiles/cmTC_c70a0.dir/src.cxx.o.d -o CMakeFiles/cmTC_c70a0.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T/src.cxx
+        Linking CXX executable cmTC_c70a0
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c70a0.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nodotprod -O2 -g -DNDEBUG CMakeFiles/cmTC_c70a0.dir/src.cxx.o -o cmTC_c70a0
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-A4Se0T'
         
       exitCode: 0
   -
@@ -2347,8 +2017,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_i8mm"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2360,17 +2030,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_i8mm_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_9d317/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_9d317.dir/build.make CMakeFiles/cmTC_9d317.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj'
-        Building CXX object CMakeFiles/cmTC_9d317.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_i8mm  -fPIC -mcpu=native+i8mm -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_9d317.dir/src.cxx.o -MF CMakeFiles/cmTC_9d317.dir/src.cxx.o.d -o CMakeFiles/cmTC_9d317.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj/src.cxx
-        Linking CXX executable cmTC_9d317
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d317.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+i8mm -O2 -g -DNDEBUG CMakeFiles/cmTC_9d317.dir/src.cxx.o -o cmTC_9d317
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-dDcIvj'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_74ad7/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_74ad7.dir/build.make CMakeFiles/cmTC_74ad7.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd'
+        Building CXX object CMakeFiles/cmTC_74ad7.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_i8mm  -fPIC -mcpu=native+i8mm -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_74ad7.dir/src.cxx.o -MF CMakeFiles/cmTC_74ad7.dir/src.cxx.o.d -o CMakeFiles/cmTC_74ad7.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd/src.cxx
+        Linking CXX executable cmTC_74ad7
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74ad7.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+i8mm -O2 -g -DNDEBUG CMakeFiles/cmTC_74ad7.dir/src.cxx.o -o cmTC_74ad7
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-55aWdd'
         
       exitCode: 0
     runResult:
@@ -2391,8 +2061,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_noi8mm"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2404,17 +2074,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_noi8mm"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_06948/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_06948.dir/build.make CMakeFiles/cmTC_06948.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD'
-        Building CXX object CMakeFiles/cmTC_06948.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_noi8mm  -fPIC -mcpu=native+noi8mm -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_06948.dir/src.cxx.o -MF CMakeFiles/cmTC_06948.dir/src.cxx.o.d -o CMakeFiles/cmTC_06948.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD/src.cxx
-        Linking CXX executable cmTC_06948
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06948.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+noi8mm -O2 -g -DNDEBUG CMakeFiles/cmTC_06948.dir/src.cxx.o -o cmTC_06948
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-QYX4AD'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_33ca5/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_33ca5.dir/build.make CMakeFiles/cmTC_33ca5.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF'
+        Building CXX object CMakeFiles/cmTC_33ca5.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_noi8mm  -fPIC -mcpu=native+noi8mm -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_33ca5.dir/src.cxx.o -MF CMakeFiles/cmTC_33ca5.dir/src.cxx.o.d -o CMakeFiles/cmTC_33ca5.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF/src.cxx
+        Linking CXX executable cmTC_33ca5
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33ca5.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+noi8mm -O2 -g -DNDEBUG CMakeFiles/cmTC_33ca5.dir/src.cxx.o -o cmTC_33ca5
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-WBrFwF'
         
       exitCode: 0
   -
@@ -2428,8 +2098,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_sve"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2441,17 +2111,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_sve_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_72a2f/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_72a2f.dir/build.make CMakeFiles/cmTC_72a2f.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV'
-        Building CXX object CMakeFiles/cmTC_72a2f.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_sve  -fPIC -mcpu=native+sve -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_72a2f.dir/src.cxx.o -MF CMakeFiles/cmTC_72a2f.dir/src.cxx.o.d -o CMakeFiles/cmTC_72a2f.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV/src.cxx
-        Linking CXX executable cmTC_72a2f
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a2f.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+sve -O2 -g -DNDEBUG CMakeFiles/cmTC_72a2f.dir/src.cxx.o -o cmTC_72a2f
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5TKyaV'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_51866/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_51866.dir/build.make CMakeFiles/cmTC_51866.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL'
+        Building CXX object CMakeFiles/cmTC_51866.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_sve  -fPIC -mcpu=native+sve -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_51866.dir/src.cxx.o -MF CMakeFiles/cmTC_51866.dir/src.cxx.o.d -o CMakeFiles/cmTC_51866.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL/src.cxx
+        Linking CXX executable cmTC_51866
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51866.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+sve -O2 -g -DNDEBUG CMakeFiles/cmTC_51866.dir/src.cxx.o -o cmTC_51866
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-4sjFfL'
         
       exitCode: 0
     runResult:
@@ -2472,8 +2142,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_nosve"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2485,17 +2155,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_nosve"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_f7108/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_f7108.dir/build.make CMakeFiles/cmTC_f7108.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7'
-        Building CXX object CMakeFiles/cmTC_f7108.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nosve  -fPIC -mcpu=native+nosve -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_f7108.dir/src.cxx.o -MF CMakeFiles/cmTC_f7108.dir/src.cxx.o.d -o CMakeFiles/cmTC_f7108.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7/src.cxx
-        Linking CXX executable cmTC_f7108
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7108.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nosve -O2 -g -DNDEBUG CMakeFiles/cmTC_f7108.dir/src.cxx.o -o cmTC_f7108
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-JPv3w7'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4eaed/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4eaed.dir/build.make CMakeFiles/cmTC_4eaed.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA'
+        Building CXX object CMakeFiles/cmTC_4eaed.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nosve  -fPIC -mcpu=native+nosve -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_4eaed.dir/src.cxx.o -MF CMakeFiles/cmTC_4eaed.dir/src.cxx.o.d -o CMakeFiles/cmTC_4eaed.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA/src.cxx
+        Linking CXX executable cmTC_4eaed
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eaed.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nosve -O2 -g -DNDEBUG CMakeFiles/cmTC_4eaed.dir/src.cxx.o -o cmTC_4eaed
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-qKOENA'
         
       exitCode: 0
   -
@@ -2509,8 +2179,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_sme"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2522,17 +2192,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_sme_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_f2776/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_f2776.dir/build.make CMakeFiles/cmTC_f2776.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL'
-        Building CXX object CMakeFiles/cmTC_f2776.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_sme  -fPIC -mcpu=native+sme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_f2776.dir/src.cxx.o -MF CMakeFiles/cmTC_f2776.dir/src.cxx.o.d -o CMakeFiles/cmTC_f2776.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL/src.cxx
-        Linking CXX executable cmTC_f2776
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2776.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+sme -O2 -g -DNDEBUG CMakeFiles/cmTC_f2776.dir/src.cxx.o -o cmTC_f2776
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-jKWvcL'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_03f20/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_03f20.dir/build.make CMakeFiles/cmTC_03f20.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj'
+        Building CXX object CMakeFiles/cmTC_03f20.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_sme  -fPIC -mcpu=native+sme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_03f20.dir/src.cxx.o -MF CMakeFiles/cmTC_03f20.dir/src.cxx.o.d -o CMakeFiles/cmTC_03f20.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj/src.cxx
+        Linking CXX executable cmTC_03f20
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03f20.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+sme -O2 -g -DNDEBUG CMakeFiles/cmTC_03f20.dir/src.cxx.o -o cmTC_03f20
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iMskrj'
         
       exitCode: 0
     runResult:
@@ -2553,8 +2223,8 @@ events:
     checks:
       - "Performing Test GGML_MACHINE_SUPPORTS_nosme"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2566,17 +2236,17 @@ events:
       variable: "GGML_MACHINE_SUPPORTS_nosme"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_82059/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_82059.dir/build.make CMakeFiles/cmTC_82059.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq'
-        Building CXX object CMakeFiles/cmTC_82059.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nosme  -fPIC -mcpu=native+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_82059.dir/src.cxx.o -MF CMakeFiles/cmTC_82059.dir/src.cxx.o.d -o CMakeFiles/cmTC_82059.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq/src.cxx
-        Linking CXX executable cmTC_82059
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82059.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nosme -O2 -g -DNDEBUG CMakeFiles/cmTC_82059.dir/src.cxx.o -o cmTC_82059
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Hg9UIq'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_e2a50/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_e2a50.dir/build.make CMakeFiles/cmTC_e2a50.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ'
+        Building CXX object CMakeFiles/cmTC_e2a50.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DGGML_MACHINE_SUPPORTS_nosme  -fPIC -mcpu=native+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_e2a50.dir/src.cxx.o -MF CMakeFiles/cmTC_e2a50.dir/src.cxx.o.d -o CMakeFiles/cmTC_e2a50.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ/src.cxx
+        Linking CXX executable cmTC_e2a50
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2a50.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -mcpu=native+nosme -O2 -g -DNDEBUG CMakeFiles/cmTC_e2a50.dir/src.cxx.o -o cmTC_e2a50
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-HcIamJ'
         
       exitCode: 0
   -
@@ -2589,8 +2259,8 @@ events:
     checks:
       - "Performing Test HAVE_DOTPROD"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2602,20 +2272,20 @@ events:
       variable: "HAVE_DOTPROD"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_a77c7/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_a77c7.dir/build.make CMakeFiles/cmTC_a77c7.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x'
-        Building CXX object CMakeFiles/cmTC_a77c7.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_DOTPROD  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_a77c7.dir/src.cxx.o -MF CMakeFiles/cmTC_a77c7.dir/src.cxx.o.d -o CMakeFiles/cmTC_a77c7.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x/src.cxx
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x/src.cxx:3:24: error: "Feature DOTPROD is not defined"
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_b78f8/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_b78f8.dir/build.make CMakeFiles/cmTC_b78f8.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz'
+        Building CXX object CMakeFiles/cmTC_b78f8.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_DOTPROD  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_b78f8.dir/src.cxx.o -MF CMakeFiles/cmTC_b78f8.dir/src.cxx.o.d -o CMakeFiles/cmTC_b78f8.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz/src.cxx
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz/src.cxx:3:24: error: "Feature DOTPROD is not defined"
             3 |                     #  error "Feature DOTPROD is not defined"
               |                        ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_a77c7.dir/build.make:82: CMakeFiles/cmTC_a77c7.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-R7Du7x'
-        make: *** [Makefile:134: cmTC_a77c7/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_b78f8.dir/build.make:82: CMakeFiles/cmTC_b78f8.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kQcBnz'
+        make: *** [Makefile:134: cmTC_b78f8/fast] Error 2
         
       exitCode: 2
   -
@@ -2628,8 +2298,8 @@ events:
     checks:
       - "Performing Test HAVE_SVE"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2641,20 +2311,20 @@ events:
       variable: "HAVE_SVE"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_a5573/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_a5573.dir/build.make CMakeFiles/cmTC_a5573.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH'
-        Building CXX object CMakeFiles/cmTC_a5573.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_SVE  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_a5573.dir/src.cxx.o -MF CMakeFiles/cmTC_a5573.dir/src.cxx.o.d -o CMakeFiles/cmTC_a5573.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH/src.cxx
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH/src.cxx:3:24: error: "Feature SVE is not defined"
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_81749/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_81749.dir/build.make CMakeFiles/cmTC_81749.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8'
+        Building CXX object CMakeFiles/cmTC_81749.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_SVE  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_81749.dir/src.cxx.o -MF CMakeFiles/cmTC_81749.dir/src.cxx.o.d -o CMakeFiles/cmTC_81749.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8/src.cxx
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8/src.cxx:3:24: error: "Feature SVE is not defined"
             3 |                     #  error "Feature SVE is not defined"
               |                        ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_a5573.dir/build.make:82: CMakeFiles/cmTC_a5573.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-cQdJvH'
-        make: *** [Makefile:134: cmTC_a5573/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_81749.dir/build.make:82: CMakeFiles/cmTC_81749.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-g4Vco8'
+        make: *** [Makefile:134: cmTC_81749/fast] Error 2
         
       exitCode: 2
   -
@@ -2667,8 +2337,8 @@ events:
     checks:
       - "Performing Test HAVE_MATMUL_INT8"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2680,20 +2350,20 @@ events:
       variable: "HAVE_MATMUL_INT8"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_accd1/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_accd1.dir/build.make CMakeFiles/cmTC_accd1.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582'
-        Building CXX object CMakeFiles/cmTC_accd1.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_MATMUL_INT8  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_accd1.dir/src.cxx.o -MF CMakeFiles/cmTC_accd1.dir/src.cxx.o.d -o CMakeFiles/cmTC_accd1.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582/src.cxx
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582/src.cxx:3:24: error: "Feature MATMUL_INT8 is not defined"
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_0357f/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_0357f.dir/build.make CMakeFiles/cmTC_0357f.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi'
+        Building CXX object CMakeFiles/cmTC_0357f.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_MATMUL_INT8  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_0357f.dir/src.cxx.o -MF CMakeFiles/cmTC_0357f.dir/src.cxx.o.d -o CMakeFiles/cmTC_0357f.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi/src.cxx
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi/src.cxx:3:24: error: "Feature MATMUL_INT8 is not defined"
             3 |                     #  error "Feature MATMUL_INT8 is not defined"
               |                        ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_accd1.dir/build.make:82: CMakeFiles/cmTC_accd1.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-whK582'
-        make: *** [Makefile:134: cmTC_accd1/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_0357f.dir/build.make:82: CMakeFiles/cmTC_0357f.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-BrPmRi'
+        make: *** [Makefile:134: cmTC_0357f/fast] Error 2
         
       exitCode: 2
   -
@@ -2706,8 +2376,8 @@ events:
     checks:
       - "Performing Test HAVE_FMA"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2719,17 +2389,17 @@ events:
       variable: "HAVE_FMA"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_eb467/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_eb467.dir/build.make CMakeFiles/cmTC_eb467.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s'
-        Building CXX object CMakeFiles/cmTC_eb467.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_FMA  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_eb467.dir/src.cxx.o -MF CMakeFiles/cmTC_eb467.dir/src.cxx.o.d -o CMakeFiles/cmTC_eb467.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s/src.cxx
-        Linking CXX executable cmTC_eb467
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb467.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang++ -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG CMakeFiles/cmTC_eb467.dir/src.cxx.o -o cmTC_eb467
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-ArO51s'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_731de/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_731de.dir/build.make CMakeFiles/cmTC_731de.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb'
+        Building CXX object CMakeFiles/cmTC_731de.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_FMA  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_731de.dir/src.cxx.o -MF CMakeFiles/cmTC_731de.dir/src.cxx.o.d -o CMakeFiles/cmTC_731de.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb/src.cxx
+        Linking CXX executable cmTC_731de
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_731de.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang++ -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG CMakeFiles/cmTC_731de.dir/src.cxx.o -o cmTC_731de
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-AKR9qb'
         
       exitCode: 0
   -
@@ -2742,8 +2412,8 @@ events:
     checks:
       - "Performing Test HAVE_FP16_VECTOR_ARITHMETIC"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2755,20 +2425,20 @@ events:
       variable: "HAVE_FP16_VECTOR_ARITHMETIC"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_ab23c/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_ab23c.dir/build.make CMakeFiles/cmTC_ab23c.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl'
-        Building CXX object CMakeFiles/cmTC_ab23c.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_FP16_VECTOR_ARITHMETIC  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_ab23c.dir/src.cxx.o -MF CMakeFiles/cmTC_ab23c.dir/src.cxx.o.d -o CMakeFiles/cmTC_ab23c.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl/src.cxx
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl/src.cxx:3:24: error: "Feature FP16_VECTOR_ARITHMETIC is not defined"
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_a1382/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_a1382.dir/build.make CMakeFiles/cmTC_a1382.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx'
+        Building CXX object CMakeFiles/cmTC_a1382.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_FP16_VECTOR_ARITHMETIC  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_a1382.dir/src.cxx.o -MF CMakeFiles/cmTC_a1382.dir/src.cxx.o.d -o CMakeFiles/cmTC_a1382.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx/src.cxx
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx/src.cxx:3:24: error: "Feature FP16_VECTOR_ARITHMETIC is not defined"
             3 |                     #  error "Feature FP16_VECTOR_ARITHMETIC is not defined"
               |                        ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_ab23c.dir/build.make:82: CMakeFiles/cmTC_ab23c.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-5xpAOl'
-        make: *** [Makefile:134: cmTC_ab23c/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_a1382.dir/build.make:82: CMakeFiles/cmTC_a1382.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Td99rx'
+        make: *** [Makefile:134: cmTC_a1382/fast] Error 2
         
       exitCode: 2
   -
@@ -2781,8 +2451,8 @@ events:
     checks:
       - "Performing Test HAVE_SME"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: "-fPIC"
@@ -2794,20 +2464,20 @@ events:
       variable: "HAVE_SME"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_9defb/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_9defb.dir/build.make CMakeFiles/cmTC_9defb.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP'
-        Building CXX object CMakeFiles/cmTC_9defb.dir/src.cxx.o
-        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_SME  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_9defb.dir/src.cxx.o -MF CMakeFiles/cmTC_9defb.dir/src.cxx.o.d -o CMakeFiles/cmTC_9defb.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP/src.cxx
-        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP/src.cxx:3:24: error: "Feature SME is not defined"
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_bae1c/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_bae1c.dir/build.make CMakeFiles/cmTC_bae1c.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj'
+        Building CXX object CMakeFiles/cmTC_bae1c.dir/src.cxx.o
+        /data/data/com.termux/files/usr/bin/clang++ -DHAVE_SME  -fPIC -U__ARM_FEATURE_DOTPROD -U__ARM_FEATURE_MATMUL_INT8 -U__ARM_FEATURE_SVE -U__ARM_FEATURE_SME -mcpu=native+nodotprod+noi8mm+nosve+nosme -O2 -g -DNDEBUG -std=gnu++17 -fPIE -MD -MT CMakeFiles/cmTC_bae1c.dir/src.cxx.o -MF CMakeFiles/cmTC_bae1c.dir/src.cxx.o.d -o CMakeFiles/cmTC_bae1c.dir/src.cxx.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj/src.cxx
+        /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj/src.cxx:3:24: error: "Feature SME is not defined"
             3 |                     #  error "Feature SME is not defined"
               |                        ^
         1 error generated.
-        make[1]: *** [CMakeFiles/cmTC_9defb.dir/build.make:82: CMakeFiles/cmTC_9defb.dir/src.cxx.o] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Y3uqlP'
-        make: *** [Makefile:134: cmTC_9defb/fast] Error 2
+        make[1]: *** [CMakeFiles/cmTC_bae1c.dir/build.make:82: CMakeFiles/cmTC_bae1c.dir/src.cxx.o] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-Ji99nj'
+        make: *** [Makefile:134: cmTC_bae1c/fast] Error 2
         
       exitCode: 2
   -
@@ -2870,8 +2540,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -2883,21 +2553,21 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_a1967/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_a1967.dir/build.make CMakeFiles/cmTC_a1967.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT'
-        Building C object CMakeFiles/cmTC_a1967.dir/CheckFunctionExists.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_a1967.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_a1967.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_a1967.dir/CheckFunctionExists.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT/CheckFunctionExists.c
-        Linking C executable cmTC_a1967
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1967.dir/link.txt --verbose=1
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_b294b/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_b294b.dir/build.make CMakeFiles/cmTC_b294b.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z'
+        Building C object CMakeFiles/cmTC_b294b.dir/CheckFunctionExists.c.o
+        /data/data/com.termux/files/usr/bin/clang   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_b294b.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b294b.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b294b.dir/CheckFunctionExists.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z/CheckFunctionExists.c
+        Linking C executable cmTC_b294b
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b294b.dir/link.txt --verbose=1
         ld.lld: error: unable to find library -lpthreads
         clang: error: linker command failed with exit code 1 (use -v to see invocation)
-        /data/data/com.termux/files/usr/bin/clang -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG CMakeFiles/cmTC_a1967.dir/CheckFunctionExists.c.o -o cmTC_a1967  -lpthreads
-        make[1]: *** [CMakeFiles/cmTC_a1967.dir/build.make:103: cmTC_a1967] Error 1
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-N9DRnT'
-        make: *** [Makefile:134: cmTC_a1967/fast] Error 2
+        /data/data/com.termux/files/usr/bin/clang -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG CMakeFiles/cmTC_b294b.dir/CheckFunctionExists.c.o -o cmTC_b294b  -lpthreads
+        make[1]: *** [CMakeFiles/cmTC_b294b.dir/build.make:103: cmTC_b294b] Error 1
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-iaBi3z'
+        make: *** [Makefile:134: cmTC_b294b/fast] Error 2
         
       exitCode: 2
   -
@@ -2910,8 +2580,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -2923,17 +2593,17 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_210cf/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_210cf.dir/build.make CMakeFiles/cmTC_210cf.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ'
-        Building C object CMakeFiles/cmTC_210cf.dir/CheckFunctionExists.c.o
-        /data/data/com.termux/files/usr/bin/clang   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_210cf.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_210cf.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_210cf.dir/CheckFunctionExists.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ/CheckFunctionExists.c
-        Linking C executable cmTC_210cf
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_210cf.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG CMakeFiles/cmTC_210cf.dir/CheckFunctionExists.c.o -o cmTC_210cf  -lpthread
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-IfVYSZ'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_4af4d/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_4af4d.dir/build.make CMakeFiles/cmTC_4af4d.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0'
+        Building C object CMakeFiles/cmTC_4af4d.dir/CheckFunctionExists.c.o
+        /data/data/com.termux/files/usr/bin/clang   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_4af4d.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4af4d.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4af4d.dir/CheckFunctionExists.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0/CheckFunctionExists.c
+        Linking C executable cmTC_4af4d
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4af4d.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG CMakeFiles/cmTC_4af4d.dir/CheckFunctionExists.c.o -o cmTC_4af4d  -lpthread
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-eQYov0'
         
       exitCode: 0
   -
@@ -3271,8 +2941,8 @@ events:
     checks:
       - "Performing Test OPENSSL_VERSION_SUPPORTED"
     directories:
-      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt"
-      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt"
+      source: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje"
+      binary: "/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
       CMAKE_C_FLAGS: "-fPIC"
@@ -3284,17 +2954,17 @@ events:
       variable: "OPENSSL_VERSION_SUPPORTED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt'
+        Change Dir: '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_e2faf/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_e2faf.dir/build.make CMakeFiles/cmTC_e2faf.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt'
-        Building C object CMakeFiles/cmTC_e2faf.dir/src.c.o
-        /data/data/com.termux/files/usr/bin/clang -DOPENSSL_VERSION_SUPPORTED  -fPIC  -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_e2faf.dir/src.c.o -MF CMakeFiles/cmTC_e2faf.dir/src.c.o.d -o CMakeFiles/cmTC_e2faf.dir/src.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt/src.c
-        Linking C executable cmTC_e2faf
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2faf.dir/link.txt --verbose=1
-        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG CMakeFiles/cmTC_e2faf.dir/src.c.o -o cmTC_e2faf
-        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-nhZPHt'
+        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_bcd27/fast
+        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_bcd27.dir/build.make CMakeFiles/cmTC_bcd27.dir/build
+        make[1]: Entering directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje'
+        Building C object CMakeFiles/cmTC_bcd27.dir/src.c.o
+        /data/data/com.termux/files/usr/bin/clang -DOPENSSL_VERSION_SUPPORTED  -fPIC  -O2 -g -DNDEBUG -fPIE -MD -MT CMakeFiles/cmTC_bcd27.dir/src.c.o -MF CMakeFiles/cmTC_bcd27.dir/src.c.o.d -o CMakeFiles/cmTC_bcd27.dir/src.c.o -c /data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje/src.c
+        Linking C executable cmTC_bcd27
+        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcd27.dir/link.txt --verbose=1
+        /data/data/com.termux/files/usr/bin/clang -fPIC  -O2 -g -DNDEBUG CMakeFiles/cmTC_bcd27.dir/src.c.o -o cmTC_bcd27
+        make[1]: Leaving directory '/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles/CMakeScratch/TryCompile-kteDje'
         
       exitCode: 0
 ...

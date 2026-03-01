@@ -109,7 +109,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o: \
   /data/data/com.termux/files/usr/bin/../../usr/include/bits/page_size.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/inttypes.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/inttypes.h \
-  /data/data/com.termux/files/usr/lib/clang/21/include/omp.h \
   /data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/ggml-cpu/llamafile/sgemm.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/pthread.h \
   /data/data/com.termux/files/usr/bin/../../usr/include/sched.h \

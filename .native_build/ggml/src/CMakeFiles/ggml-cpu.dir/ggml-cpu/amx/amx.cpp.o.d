@@ -669,7 +669,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o: \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/streambuf \
   /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/cstdarg \
   /data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/ggml-cpu/amx/common.h \
-  /data/data/com.termux/files/usr/lib/clang/21/include/omp.h \
   /data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/ggml-cpu/amx/mmq.h \
   /data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/./ggml-backend-impl.h \
   /data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/../include/ggml-cpu.h \

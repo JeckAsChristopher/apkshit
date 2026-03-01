@@ -148,7 +148,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindGit.cmake"
-  "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenMP.cmake"
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindOpenSSL.cmake"
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
   "/data/data/com.termux/files/usr/share/cmake-4.2/Modules/FindPackageMessage.cmake"

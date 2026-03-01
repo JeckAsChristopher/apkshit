@@ -101,7 +101,6 @@ bin/llama-perplexity: src/libllama.a
 bin/llama-perplexity: ggml/src/libggml.a
 bin/llama-perplexity: ggml/src/libggml-cpu.a
 bin/llama-perplexity: ggml/src/libggml-base.a
-bin/llama-perplexity: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-perplexity: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-perplexity: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-perplexity: /data/data/com.termux/files/usr/lib/libcrypto.so

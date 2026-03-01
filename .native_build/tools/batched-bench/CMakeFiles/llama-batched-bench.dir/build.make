@@ -101,7 +101,6 @@ bin/llama-batched-bench: src/libllama.a
 bin/llama-batched-bench: ggml/src/libggml.a
 bin/llama-batched-bench: ggml/src/libggml-cpu.a
 bin/llama-batched-bench: ggml/src/libggml-base.a
-bin/llama-batched-bench: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-batched-bench: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-batched-bench: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-batched-bench: /data/data/com.termux/files/usr/lib/libcrypto.so

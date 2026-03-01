@@ -101,7 +101,6 @@ bin/llama-export-lora: src/libllama.a
 bin/llama-export-lora: ggml/src/libggml.a
 bin/llama-export-lora: ggml/src/libggml-cpu.a
 bin/llama-export-lora: ggml/src/libggml-base.a
-bin/llama-export-lora: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-export-lora: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-export-lora: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-export-lora: /data/data/com.termux/files/usr/lib/libcrypto.so

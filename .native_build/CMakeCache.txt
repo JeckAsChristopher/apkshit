@@ -518,7 +518,7 @@ GGML_OPENCL_TARGET_VERSION:STRING=300
 GGML_OPENCL_USE_ADRENO_KERNELS:BOOL=ON
 
 //ggml: use OpenMP
-GGML_OPENMP:BOOL=ON
+GGML_OPENMP:BOOL=OFF
 
 //ggml: use RPC
 GGML_RPC:BOOL=OFF
@@ -683,6 +683,9 @@ LLAMA_LIB_INSTALL_DIR:PATH=lib
 // in common utils
 LLAMA_LLGUIDANCE:BOOL=OFF
 
+//No help, variable specified on the command line.
+LLAMA_OPENMP:UNINITIALIZED=OFF
+
 //llama: use openssl to support HTTPS
 LLAMA_OPENSSL:BOOL=ON
 
@@ -721,21 +724,6 @@ OPENSSL_NO_ASM:BOOL=ON
 
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/data/data/com.termux/files/usr/lib/libssl.so
-
-//CXX compiler flags for OpenMP parallelization
-OpenMP_CXX_FLAGS:STRING=-fopenmp=libomp
-
-//CXX compiler libraries for OpenMP parallelization
-OpenMP_CXX_LIB_NAMES:STRING=omp
-
-//C compiler flags for OpenMP parallelization
-OpenMP_C_FLAGS:STRING=-fopenmp=libomp
-
-//C compiler libraries for OpenMP parallelization
-OpenMP_C_LIB_NAMES:STRING=omp
-
-//Path to the omp library for OpenMP
-OpenMP_omp_LIBRARY:FILEPATH=/data/data/com.termux/files/usr/lib/libomp.a
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -979,12 +967,6 @@ CMAKE_UNAME:INTERNAL=/data/data/com.termux/files/usr/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/data/data/com.termux/files/usr/bin/git][v2.53.0()]
-//Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][ ][v5.1()]
-//Details about finding OpenMP_C
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp=libomp][/data/data/com.termux/files/usr/lib/libomp.a][v5.1()]
-//Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp=libomp][/data/data/com.termux/files/usr/lib/libomp.a][v5.1()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/data/data/com.termux/files/usr/lib/libcrypto.so][/data/data/com.termux/files/usr/include][ ][v3.6.1()]
 //Details about finding Threads
@@ -1027,7 +1009,6 @@ GGML_MACHINE_SUPPORTS_sve:INTERNAL=
 GGML_MACHINE_SUPPORTS_sve_COMPILED:INTERNAL=TRUE
 //Result of try_run()
 GGML_MACHINE_SUPPORTS_sve_EXITCODE:INTERNAL=FAILED_TO_RUN
-GGML_OPENMP_ENABLED:INTERNAL=ON
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Test HAVE_DOTPROD
@@ -1050,28 +1031,6 @@ OPENSSL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENSSL_SSL_LIBRARY-ADVANCED:INTERNAL=1
 //Test OPENSSL_VERSION_SUPPORTED
 OPENSSL_VERSION_SUPPORTED:INTERNAL=1
-//Result of TRY_COMPILE
-OpenMP_COMPILE_RESULT_CXX_fopenmplibomp:INTERNAL=TRUE
-//Result of TRY_COMPILE
-OpenMP_COMPILE_RESULT_C_fopenmplibomp:INTERNAL=TRUE
-//ADVANCED property for variable: OpenMP_CXX_FLAGS
-OpenMP_CXX_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_CXX_LIB_NAMES
-OpenMP_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
-//CXX compiler's OpenMP specification date
-OpenMP_CXX_SPEC_DATE:INTERNAL=202011
-//ADVANCED property for variable: OpenMP_C_FLAGS
-OpenMP_C_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OpenMP_C_LIB_NAMES
-OpenMP_C_LIB_NAMES-ADVANCED:INTERNAL=1
-//C compiler's OpenMP specification date
-OpenMP_C_SPEC_DATE:INTERNAL=202011
-//Result of TRY_COMPILE
-OpenMP_SPECTEST_CXX_:INTERNAL=TRUE
-//Result of TRY_COMPILE
-OpenMP_SPECTEST_C_:INTERNAL=TRUE
-//ADVANCED property for variable: OpenMP_omp_LIBRARY
-OpenMP_omp_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

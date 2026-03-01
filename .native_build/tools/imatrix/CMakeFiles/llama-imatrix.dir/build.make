@@ -101,7 +101,6 @@ bin/llama-imatrix: src/libllama.a
 bin/llama-imatrix: ggml/src/libggml.a
 bin/llama-imatrix: ggml/src/libggml-cpu.a
 bin/llama-imatrix: ggml/src/libggml-base.a
-bin/llama-imatrix: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-imatrix: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-imatrix: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-imatrix: /data/data/com.termux/files/usr/lib/libcrypto.so

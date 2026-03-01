@@ -684,7 +684,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o: /data/data/com.termux/f
   /data/data/com.termux/files/usr/lib/clang/21/include/arm_vector_types.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/float.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/limits.h \
-  /data/data/com.termux/files/usr/lib/clang/21/include/omp.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdarg.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdbool.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stddef.h \
@@ -1361,7 +1360,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o: /data/data/com.termux/f
   /data/data/com.termux/files/usr/lib/clang/21/include/arm_vector_types.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/float.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/limits.h \
-  /data/data/com.termux/files/usr/lib/clang/21/include/omp.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdarg.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdbool.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stddef.h \
@@ -2924,7 +2922,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o: /data/data/com.termux/fi
   /data/data/com.termux/files/usr/lib/clang/21/include/float.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/inttypes.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/limits.h \
-  /data/data/com.termux/files/usr/lib/clang/21/include/omp.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdarg.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdatomic.h \
   /data/data/com.termux/files/usr/lib/clang/21/include/stdbool.h \
@@ -8371,8 +8368,6 @@ ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o: /data/data/com.termux/files
 /data/data/com.termux/files/usr/include/c++/v1/__locale_dir/pad_and_output.h:
 
 /data/data/com.termux/files/usr/include/c++/v1/__functional/unary_function.h:
-
-/data/data/com.termux/files/usr/lib/clang/21/include/omp.h:
 
 /data/data/com.termux/files/usr/include/c++/v1/__algorithm/copy_if.h:
 

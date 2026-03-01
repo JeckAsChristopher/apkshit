@@ -101,7 +101,6 @@ bin/llama-fit-params: src/libllama.a
 bin/llama-fit-params: ggml/src/libggml.a
 bin/llama-fit-params: ggml/src/libggml-cpu.a
 bin/llama-fit-params: ggml/src/libggml-base.a
-bin/llama-fit-params: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-fit-params: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-fit-params: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-fit-params: /data/data/com.termux/files/usr/lib/libcrypto.so

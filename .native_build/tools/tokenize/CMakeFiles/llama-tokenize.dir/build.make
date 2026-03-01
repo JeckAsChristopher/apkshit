@@ -101,7 +101,6 @@ bin/llama-tokenize: src/libllama.a
 bin/llama-tokenize: ggml/src/libggml.a
 bin/llama-tokenize: ggml/src/libggml-cpu.a
 bin/llama-tokenize: ggml/src/libggml-base.a
-bin/llama-tokenize: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-tokenize: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-tokenize: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-tokenize: /data/data/com.termux/files/usr/lib/libcrypto.so

@@ -38,7 +38,9 @@ cmake -S "$CPP_DIR/llama.cpp" -B "$BUILD" \
   -DLLAMA_BUILD_EXAMPLES=OFF \
   -DLLAMA_BUILD_SERVER=OFF \
   -DLLAMA_CURL=OFF \
-  -DBUILD_SHARED_LIBS=OFF
+  -DBUILD_SHARED_LIBS=OFF \
+  -DGGML_OPENMP=OFF \
+  -DLLAMA_OPENMP=OFF
 
 cmake --build "$BUILD" --target llama ggml -j$(nproc)
 

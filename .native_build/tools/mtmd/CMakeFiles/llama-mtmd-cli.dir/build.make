@@ -105,7 +105,6 @@ bin/llama-mtmd-cli: src/libllama.a
 bin/llama-mtmd-cli: ggml/src/libggml.a
 bin/llama-mtmd-cli: ggml/src/libggml-cpu.a
 bin/llama-mtmd-cli: ggml/src/libggml-base.a
-bin/llama-mtmd-cli: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-mtmd-cli: tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/llama-mtmd-cli"
 	cd /data/data/com.termux/files/home/Lex/.native_build/tools/mtmd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/llama-mtmd-cli.dir/link.txt --verbose=$(VERBOSE)

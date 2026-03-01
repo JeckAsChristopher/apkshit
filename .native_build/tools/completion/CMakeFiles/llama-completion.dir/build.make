@@ -101,7 +101,6 @@ bin/llama-completion: src/libllama.a
 bin/llama-completion: ggml/src/libggml.a
 bin/llama-completion: ggml/src/libggml-cpu.a
 bin/llama-completion: ggml/src/libggml-base.a
-bin/llama-completion: /data/data/com.termux/files/usr/lib/libomp.a
 bin/llama-completion: vendor/cpp-httplib/libcpp-httplib.a
 bin/llama-completion: /data/data/com.termux/files/usr/lib/libssl.so
 bin/llama-completion: /data/data/com.termux/files/usr/lib/libcrypto.so
