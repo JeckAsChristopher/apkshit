@@ -1,14 +1,14 @@
 package com.mide.ide.compiler
 
 import com.mide.ide.MIDEApplication
-import com.mide.ide.project.Project
+import com.mide.ide.project.MIDEProject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.withContext
 import java.io.File
 
-class BuildEngine(private val project: Project) {
+class BuildEngine(private val project: MIDEProject) {
 
     enum class BuildState { IDLE, COMPILING_JAVA, COMPILING_DEX, COMPILING_RESOURCES, PACKAGING, SIGNING, DONE }
 
