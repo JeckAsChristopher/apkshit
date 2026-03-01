@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.mide.ide.MIDEApplication
-import com.mide.ide.util.ProcessUtils
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -35,16 +34,23 @@ class TerminalViewModel(application: Application) : AndroidViewModel(application
     private fun startShell() {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val workDir = MIDEApplication.getInstance().projectManager.currentProject?.rootDir
-                    ?: File(MIDEApplication.getContext().getExternalFilesDir(null), "projects")
+                val workDir = MIDEApplication.get().projectManager.currentProject?.rootDir
+                    ?: MIDEApplication.get().getExternalFilesDir(null)
+                    ?: File(MIDEApplication.get().filesDir, "projects")
 
-                shellProcess = ProcessUtils.startInteractiveShell(workDir)
+                val shell = listOf("/bin/sh", "/system/bin/sh")
+                    .firstOrNull { File(it).exists() } ?: "/system/bin/sh"
+
+                shellProcess = ProcessBuilder(shell)
+                    .directory(workDir)
+                    .redirectErrorStream(true)
+                    .start()
+
                 shellWriter = PrintWriter(shellProcess!!.outputStream.bufferedWriter(), true)
                 _isRunning.value = true
 
                 appendOutput("MIDE Terminal\nType 'exit' to close shell.\n$ ")
 
-                // Read output stream continuously
                 viewModelScope.launch(Dispatchers.IO) {
                     val reader = shellProcess!!.inputStream.bufferedReader()
                     try {
@@ -88,7 +94,6 @@ class TerminalViewModel(application: Application) : AndroidViewModel(application
     private suspend fun appendOutput(text: String) = withContext(Dispatchers.Main) {
         outputBuilder.append(text)
 
-        // Trim to prevent unbounded growth
         val lineCount = outputBuilder.count { it == '\n' }
         if (lineCount > maxOutputLines) {
             val lines = outputBuilder.toString().lines()

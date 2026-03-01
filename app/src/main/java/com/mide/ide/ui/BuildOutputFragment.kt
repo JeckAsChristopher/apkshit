@@ -62,9 +62,8 @@ class BuildOutputFragment : Fragment() {
 
     private fun observeViewModel() {
         viewModel.buildOutput.observe(viewLifecycleOwner) { lines ->
-            val sb = StringBuilder()
-            val spannable = SpannableString(lines.joinToString("
-"))
+            val joined = lines.joinToString("\n")
+            val spannable = SpannableString(joined)
             var offset = 0
             lines.forEach { line ->
                 val color = when {

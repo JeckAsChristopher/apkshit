@@ -12,6 +12,8 @@ class ProjectManager(private val context: Context) {
     private val gson = Gson()
     private val projectsDir get() = MIDEApplication.get().projectsDir
 
+    var currentProject: MIDEProject? = null
+
     suspend fun createProject(
         name: String,
         template: ProjectTemplate,

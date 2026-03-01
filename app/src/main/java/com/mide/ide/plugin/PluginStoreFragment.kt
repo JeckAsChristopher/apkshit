@@ -15,6 +15,7 @@ import androidx.lifecycle.lifecycleScope
 import com.google.gson.Gson
 import com.mide.ide.MIDEApplication
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
@@ -78,7 +79,6 @@ class PluginStoreFragment : DialogFragment() {
 
     private suspend fun loadPlugins() {
         val installedPlugins = getInstalledPluginIds()
-
         val plugins = fetchStorePlugins()
         withContext(Dispatchers.Main) {
             progressBar.visibility = View.GONE
@@ -154,9 +154,7 @@ class PluginStoreFragment : DialogFragment() {
                     val tempFile = java.io.File(ctx.cacheDir, "${plugin.id}.zip")
                     response.body?.byteStream()?.use { it.copyTo(tempFile.outputStream()) }
                     val pm = PluginManager(ctx)
-                    val prefs = MIDEApplication.get().preferencesManager
-                    var allowUnverified = false
-                    kotlinx.coroutines.flow.first(prefs.allowUnverifiedPlugins).also { allowUnverified = it }
+                    val allowUnverified = MIDEApplication.get().preferencesManager.allowUnverifiedPlugins.first()
                     val installResult = pm.installPlugin(tempFile, allowUnverified)
                     tempFile.delete()
                     installResult.success
@@ -165,9 +163,11 @@ class PluginStoreFragment : DialogFragment() {
                 }
             }
             withContext(Dispatchers.Main) {
-                Toast.makeText(ctx,
+                Toast.makeText(
+                    ctx,
                     if (result) "${plugin.name} installed!" else "Failed to install ${plugin.name}",
-                    Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }

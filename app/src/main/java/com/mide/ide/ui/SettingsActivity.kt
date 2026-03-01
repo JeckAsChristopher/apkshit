@@ -2,7 +2,6 @@ package com.mide.ide.ui
 
 import android.os.Bundle
 import android.view.View
-import android.widget.CompoundButton
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.SeekBar
@@ -11,7 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.mide.ide.MIDEApplication
-import com.mide.ide.utils.PreferencesManager
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
@@ -29,8 +28,8 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         layout.addView(sectionHeader("Editor"))
-        layout.addView(seekBarSetting("Font Size", 8, 32) { prefs.fontSize } { prefs.setFontSize(it.toFloat()) })
-        layout.addView(seekBarSetting("Tab Width", 2, 8) { prefs.tabSize } { prefs.setTabSize(it) })
+        layout.addView(seekBarSetting("Font Size", 8, 32, { prefs.fontSize }) { prefs.setFontSize(it.toFloat()) })
+        layout.addView(seekBarSetting("Tab Width", 2, 8, { prefs.tabSize }) { prefs.setTabSize(it) })
         layout.addView(switchSetting("Word Wrap", prefs.wordWrap) { prefs.setWordWrap(it) })
         layout.addView(switchSetting("Show Line Numbers", prefs.showLineNumbers) { prefs.setShowLineNumbers(it) })
         layout.addView(switchSetting("Auto Save", prefs.autoSave) { prefs.setAutoSave(it) })
@@ -55,7 +54,7 @@ class SettingsActivity : AppCompatActivity() {
 
     private fun switchSetting(
         label: String,
-        valueFlow: kotlinx.coroutines.flow.Flow<Boolean>,
+        valueFlow: Flow<Boolean>,
         onChanged: suspend (Boolean) -> Unit
     ): View {
         val ctx = this
@@ -85,7 +84,7 @@ class SettingsActivity : AppCompatActivity() {
         label: String,
         min: Int,
         max: Int,
-        valueFlow: () -> kotlinx.coroutines.flow.Flow<Number>,
+        valueFlow: () -> Flow<Number>,
         onChanged: suspend (Int) -> Unit
     ): View {
         val ctx = this

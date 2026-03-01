@@ -1,7 +1,5 @@
 package com.mide.ide.compiler
 
-import com.mide.ide.MIDEApplication
-import org.eclipse.jdt.core.compiler.IProblem
 import org.eclipse.jdt.internal.compiler.Compiler
 import org.eclipse.jdt.internal.compiler.DefaultErrorHandlingPolicies
 import org.eclipse.jdt.internal.compiler.ICompilerRequestor
@@ -107,7 +105,7 @@ class JavaCompiler {
 
         val requestor = ICompilerRequestor { result ->
             result.classFiles.forEach { classFile ->
-                val className = String(classFile.fileName)
+                val className = String(classFile.fileName())
                     .replace('/', File.separatorChar)
                     .removeSuffix(".class")
                 val outputFile = File(classesOutputDir, "$className.class")

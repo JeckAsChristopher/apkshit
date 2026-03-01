@@ -48,7 +48,7 @@ class TerminalFragment : Fragment() {
             override fun onBell(session: TerminalSession) {}
             override fun onColorsChanged(session: TerminalSession) {}
             override fun onTerminalCursorStateChange(state: Boolean) {}
-            override fun setTerminalShellPid(session: TerminalSession, pid: Int) {}
+            override fun getTerminalCursorStyle(): Int = TerminalEmulator.DEFAULT_TERMINAL_CURSOR_STYLE
             override fun logError(tag: String, message: String) {}
             override fun logWarn(tag: String, message: String) {}
             override fun logInfo(tag: String, message: String) {}
@@ -78,7 +78,7 @@ class TerminalFragment : Fragment() {
             override fun logVerbose(tag: String, message: String) {}
             override fun logStackTraceWithMessage(tag: String, message: String, e: Exception) {}
             override fun logStackTrace(tag: String, e: Exception) {}
-            override fun onScale(scale: Float): Boolean = false
+            override fun onScale(scale: Float): Float = scale
             override fun onSingleTapUp(e: android.view.MotionEvent?) {}
             override fun shouldBackButtonBeMappedToEscape(): Boolean = false
             override fun shouldEnforceCharBasedInput(): Boolean = true
@@ -94,7 +94,6 @@ class TerminalFragment : Fragment() {
             override fun readFnKey(): Boolean = false
             override fun onCodePoint(codePoint: Int, ctrlDown: Boolean, session: TerminalSession?): Boolean = false
             override fun onEmulatorSet() {}
-            override fun onBell() {}
         }
 
         terminalView.setTerminalViewClient(viewClient)
@@ -127,8 +126,7 @@ class TerminalFragment : Fragment() {
     }
 
     fun sendCommand(command: String) {
-        sendInput("${"$"}command
-")
+        sendInput("$command\n")
     }
 
     override fun onDestroy() {
