@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Core palette -->
-    <color name="bg_dark">#0D0D14</color>
-    <color name="bg_surface">#13131E</color>
-    <color name="bg_elevated">#1A1A2A</color>
-    <color name="divider">#1E1E2E</color>
-
-    <!-- Accent — electric violet -->
-    <color name="accent">#7C6FFF</color>
-    <color name="accent_dark">#5A4FCC</color>
-    <color name="accent_glow">#3D3580</color>
-
-    <!-- Message bubbles -->
-    <color name="bubble_user">#6C63FF</color>
-    <color name="bubble_ai">#1C1C2E</color>
-
-    <!-- Text -->
-    <color name="white">#FFFFFF</color>
-    <color name="text_secondary">#8888AA</color>
-    <color name="text_hint">#55556A</color>
-
-    <!-- System -->
-    <color name="black">#000000</color>
-    <color name="transparent">#00000000</color>
-
-    <color name="text_secondary_light">#AAAACC</color>
+    <color name="primary">#1E1E2E</color>
+    <color name="primary_variant">#181825</color>
+    <color name="secondary">#CBA6F7</color>
+    <color name="secondary_variant">#B4BEFE</color>
+    <color name="background">#1E1E2E</color>
+    <color name="surface">#313244</color>
+    <color name="surface_variant">#181825</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#1E1E2E</color>
+    <color name="on_background">#CDD6F4</color>
+    <color name="on_surface">#CDD6F4</color>
+    <color name="error">#F38BA8</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="tab_background">#24273A</color>
+    <color name="terminal_background">#0D0D0D</color>
+    <color name="status_bar_background">#11111B</color>
+    <color name="status_bar_text">#7F849C</color>
+    <color name="build_button_color">#A6E3A1</color>
+    <color name="file_tree_background">#181825</color>
 </resources>
