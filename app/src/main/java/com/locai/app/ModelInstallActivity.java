@@ -102,7 +102,7 @@ public class ModelInstallActivity extends AppCompatActivity {
                         "This will download one file (~" + selectedModel.getSizeLabel() +
                         ") from HuggingFace.\n\n" +
                         "• Requires internet (Wi-Fi recommended)\n" +
-                        "• Saved to /sdcard/locai/model/\n" +
+                        "• Saved to /storage/emulated/0/locai/model/\n" +
                         "• After this, LOCAI runs 100% offline"
                 )
                 .setPositiveButton("Download & Install", (d, w) -> startDownload())
