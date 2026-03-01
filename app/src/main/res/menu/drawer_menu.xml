@@ -7,7 +7,7 @@
             android:title="New Project" />
         <item
             android:id="@+id/menu_open_project"
-            android:icon="@android:drawable/ic_menu_open_file"
+            android:icon="@drawable/ic_menu_open_file"
             android:title="Open Project" />
         <item
             android:id="@+id/menu_plugins"
