@@ -716,11 +716,11 @@ common/CMakeFiles/build_info.dir/clean:
 # Target rules for target common/CMakeFiles/common.dir
 
 # All Build rule for target.
-common/CMakeFiles/common.dir/all: src/CMakeFiles/llama.dir/all
-common/CMakeFiles/common.dir/all: common/CMakeFiles/build_info.dir/all
 common/CMakeFiles/common.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 common/CMakeFiles/common.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 common/CMakeFiles/common.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+common/CMakeFiles/common.dir/all: src/CMakeFiles/llama.dir/all
+common/CMakeFiles/common.dir/all: common/CMakeFiles/build_info.dir/all
 common/CMakeFiles/common.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/depend
 	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
@@ -785,12 +785,12 @@ vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/clean:
 # Target rules for target tools/batched-bench/CMakeFiles/llama-batched-bench.dir
 
 # All Build rule for target.
-tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: src/CMakeFiles/llama.dir/all
-tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: common/CMakeFiles/build_info.dir/all
-tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: common/CMakeFiles/common.dir/all
 tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: src/CMakeFiles/llama.dir/all
+tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: common/CMakeFiles/build_info.dir/all
+tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: common/CMakeFiles/common.dir/all
 tools/batched-bench/CMakeFiles/llama-batched-bench.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/batched-bench/CMakeFiles/llama-batched-bench.dir/build.make tools/batched-bench/CMakeFiles/llama-batched-bench.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/batched-bench/CMakeFiles/llama-batched-bench.dir/build.make tools/batched-bench/CMakeFiles/llama-batched-bench.dir/build
@@ -823,12 +823,12 @@ tools/batched-bench/CMakeFiles/llama-batched-bench.dir/clean:
 # Target rules for target tools/gguf-split/CMakeFiles/llama-gguf-split.dir
 
 # All Build rule for target.
-tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: src/CMakeFiles/llama.dir/all
-tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: common/CMakeFiles/build_info.dir/all
-tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: common/CMakeFiles/common.dir/all
 tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: src/CMakeFiles/llama.dir/all
+tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: common/CMakeFiles/build_info.dir/all
+tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: common/CMakeFiles/common.dir/all
 tools/gguf-split/CMakeFiles/llama-gguf-split.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make tools/gguf-split/CMakeFiles/llama-gguf-split.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/gguf-split/CMakeFiles/llama-gguf-split.dir/build.make tools/gguf-split/CMakeFiles/llama-gguf-split.dir/build
@@ -861,12 +861,12 @@ tools/gguf-split/CMakeFiles/llama-gguf-split.dir/clean:
 # Target rules for target tools/imatrix/CMakeFiles/llama-imatrix.dir
 
 # All Build rule for target.
-tools/imatrix/CMakeFiles/llama-imatrix.dir/all: src/CMakeFiles/llama.dir/all
-tools/imatrix/CMakeFiles/llama-imatrix.dir/all: common/CMakeFiles/build_info.dir/all
-tools/imatrix/CMakeFiles/llama-imatrix.dir/all: common/CMakeFiles/common.dir/all
 tools/imatrix/CMakeFiles/llama-imatrix.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/imatrix/CMakeFiles/llama-imatrix.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/imatrix/CMakeFiles/llama-imatrix.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/imatrix/CMakeFiles/llama-imatrix.dir/all: src/CMakeFiles/llama.dir/all
+tools/imatrix/CMakeFiles/llama-imatrix.dir/all: common/CMakeFiles/build_info.dir/all
+tools/imatrix/CMakeFiles/llama-imatrix.dir/all: common/CMakeFiles/common.dir/all
 tools/imatrix/CMakeFiles/llama-imatrix.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/imatrix/CMakeFiles/llama-imatrix.dir/build.make tools/imatrix/CMakeFiles/llama-imatrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/imatrix/CMakeFiles/llama-imatrix.dir/build.make tools/imatrix/CMakeFiles/llama-imatrix.dir/build
@@ -899,12 +899,12 @@ tools/imatrix/CMakeFiles/llama-imatrix.dir/clean:
 # Target rules for target tools/llama-bench/CMakeFiles/llama-bench.dir
 
 # All Build rule for target.
-tools/llama-bench/CMakeFiles/llama-bench.dir/all: src/CMakeFiles/llama.dir/all
-tools/llama-bench/CMakeFiles/llama-bench.dir/all: common/CMakeFiles/build_info.dir/all
-tools/llama-bench/CMakeFiles/llama-bench.dir/all: common/CMakeFiles/common.dir/all
 tools/llama-bench/CMakeFiles/llama-bench.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/llama-bench/CMakeFiles/llama-bench.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/llama-bench/CMakeFiles/llama-bench.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/llama-bench/CMakeFiles/llama-bench.dir/all: src/CMakeFiles/llama.dir/all
+tools/llama-bench/CMakeFiles/llama-bench.dir/all: common/CMakeFiles/build_info.dir/all
+tools/llama-bench/CMakeFiles/llama-bench.dir/all: common/CMakeFiles/common.dir/all
 tools/llama-bench/CMakeFiles/llama-bench.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/llama-bench/CMakeFiles/llama-bench.dir/build.make tools/llama-bench/CMakeFiles/llama-bench.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/llama-bench/CMakeFiles/llama-bench.dir/build.make tools/llama-bench/CMakeFiles/llama-bench.dir/build
@@ -937,12 +937,12 @@ tools/llama-bench/CMakeFiles/llama-bench.dir/clean:
 # Target rules for target tools/completion/CMakeFiles/llama-completion.dir
 
 # All Build rule for target.
-tools/completion/CMakeFiles/llama-completion.dir/all: src/CMakeFiles/llama.dir/all
-tools/completion/CMakeFiles/llama-completion.dir/all: common/CMakeFiles/build_info.dir/all
-tools/completion/CMakeFiles/llama-completion.dir/all: common/CMakeFiles/common.dir/all
 tools/completion/CMakeFiles/llama-completion.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/completion/CMakeFiles/llama-completion.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/completion/CMakeFiles/llama-completion.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/completion/CMakeFiles/llama-completion.dir/all: src/CMakeFiles/llama.dir/all
+tools/completion/CMakeFiles/llama-completion.dir/all: common/CMakeFiles/build_info.dir/all
+tools/completion/CMakeFiles/llama-completion.dir/all: common/CMakeFiles/common.dir/all
 tools/completion/CMakeFiles/llama-completion.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/completion/CMakeFiles/llama-completion.dir/build.make tools/completion/CMakeFiles/llama-completion.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/completion/CMakeFiles/llama-completion.dir/build.make tools/completion/CMakeFiles/llama-completion.dir/build
@@ -975,12 +975,12 @@ tools/completion/CMakeFiles/llama-completion.dir/clean:
 # Target rules for target tools/perplexity/CMakeFiles/llama-perplexity.dir
 
 # All Build rule for target.
-tools/perplexity/CMakeFiles/llama-perplexity.dir/all: src/CMakeFiles/llama.dir/all
-tools/perplexity/CMakeFiles/llama-perplexity.dir/all: common/CMakeFiles/build_info.dir/all
-tools/perplexity/CMakeFiles/llama-perplexity.dir/all: common/CMakeFiles/common.dir/all
 tools/perplexity/CMakeFiles/llama-perplexity.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/perplexity/CMakeFiles/llama-perplexity.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/perplexity/CMakeFiles/llama-perplexity.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/perplexity/CMakeFiles/llama-perplexity.dir/all: src/CMakeFiles/llama.dir/all
+tools/perplexity/CMakeFiles/llama-perplexity.dir/all: common/CMakeFiles/build_info.dir/all
+tools/perplexity/CMakeFiles/llama-perplexity.dir/all: common/CMakeFiles/common.dir/all
 tools/perplexity/CMakeFiles/llama-perplexity.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/perplexity/CMakeFiles/llama-perplexity.dir/build.make tools/perplexity/CMakeFiles/llama-perplexity.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/perplexity/CMakeFiles/llama-perplexity.dir/build.make tools/perplexity/CMakeFiles/llama-perplexity.dir/build
@@ -1013,12 +1013,12 @@ tools/perplexity/CMakeFiles/llama-perplexity.dir/clean:
 # Target rules for target tools/quantize/CMakeFiles/llama-quantize.dir
 
 # All Build rule for target.
-tools/quantize/CMakeFiles/llama-quantize.dir/all: src/CMakeFiles/llama.dir/all
-tools/quantize/CMakeFiles/llama-quantize.dir/all: common/CMakeFiles/build_info.dir/all
-tools/quantize/CMakeFiles/llama-quantize.dir/all: common/CMakeFiles/common.dir/all
 tools/quantize/CMakeFiles/llama-quantize.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/quantize/CMakeFiles/llama-quantize.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/quantize/CMakeFiles/llama-quantize.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/quantize/CMakeFiles/llama-quantize.dir/all: src/CMakeFiles/llama.dir/all
+tools/quantize/CMakeFiles/llama-quantize.dir/all: common/CMakeFiles/build_info.dir/all
+tools/quantize/CMakeFiles/llama-quantize.dir/all: common/CMakeFiles/common.dir/all
 tools/quantize/CMakeFiles/llama-quantize.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/quantize/CMakeFiles/llama-quantize.dir/build.make tools/quantize/CMakeFiles/llama-quantize.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/quantize/CMakeFiles/llama-quantize.dir/build.make tools/quantize/CMakeFiles/llama-quantize.dir/build
@@ -1051,12 +1051,12 @@ tools/quantize/CMakeFiles/llama-quantize.dir/clean:
 # Target rules for target tools/tokenize/CMakeFiles/llama-tokenize.dir
 
 # All Build rule for target.
-tools/tokenize/CMakeFiles/llama-tokenize.dir/all: src/CMakeFiles/llama.dir/all
-tools/tokenize/CMakeFiles/llama-tokenize.dir/all: common/CMakeFiles/build_info.dir/all
-tools/tokenize/CMakeFiles/llama-tokenize.dir/all: common/CMakeFiles/common.dir/all
 tools/tokenize/CMakeFiles/llama-tokenize.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/tokenize/CMakeFiles/llama-tokenize.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/tokenize/CMakeFiles/llama-tokenize.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/tokenize/CMakeFiles/llama-tokenize.dir/all: src/CMakeFiles/llama.dir/all
+tools/tokenize/CMakeFiles/llama-tokenize.dir/all: common/CMakeFiles/build_info.dir/all
+tools/tokenize/CMakeFiles/llama-tokenize.dir/all: common/CMakeFiles/common.dir/all
 tools/tokenize/CMakeFiles/llama-tokenize.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/tokenize/CMakeFiles/llama-tokenize.dir/build.make tools/tokenize/CMakeFiles/llama-tokenize.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/tokenize/CMakeFiles/llama-tokenize.dir/build.make tools/tokenize/CMakeFiles/llama-tokenize.dir/build
@@ -1089,12 +1089,12 @@ tools/tokenize/CMakeFiles/llama-tokenize.dir/clean:
 # Target rules for target tools/tts/CMakeFiles/llama-tts.dir
 
 # All Build rule for target.
-tools/tts/CMakeFiles/llama-tts.dir/all: src/CMakeFiles/llama.dir/all
-tools/tts/CMakeFiles/llama-tts.dir/all: common/CMakeFiles/build_info.dir/all
-tools/tts/CMakeFiles/llama-tts.dir/all: common/CMakeFiles/common.dir/all
 tools/tts/CMakeFiles/llama-tts.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/tts/CMakeFiles/llama-tts.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/tts/CMakeFiles/llama-tts.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/tts/CMakeFiles/llama-tts.dir/all: src/CMakeFiles/llama.dir/all
+tools/tts/CMakeFiles/llama-tts.dir/all: common/CMakeFiles/build_info.dir/all
+tools/tts/CMakeFiles/llama-tts.dir/all: common/CMakeFiles/common.dir/all
 tools/tts/CMakeFiles/llama-tts.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/tts/CMakeFiles/llama-tts.dir/build.make tools/tts/CMakeFiles/llama-tts.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/tts/CMakeFiles/llama-tts.dir/build.make tools/tts/CMakeFiles/llama-tts.dir/build
@@ -1127,10 +1127,10 @@ tools/tts/CMakeFiles/llama-tts.dir/clean:
 # Target rules for target tools/mtmd/CMakeFiles/mtmd.dir
 
 # All Build rule for target.
-tools/mtmd/CMakeFiles/mtmd.dir/all: src/CMakeFiles/llama.dir/all
 tools/mtmd/CMakeFiles/mtmd.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/mtmd/CMakeFiles/mtmd.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/mtmd/CMakeFiles/mtmd.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/mtmd/CMakeFiles/mtmd.dir/all: src/CMakeFiles/llama.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/mtmd/CMakeFiles/mtmd.dir/build.make tools/mtmd/CMakeFiles/mtmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/mtmd/CMakeFiles/mtmd.dir/build.make tools/mtmd/CMakeFiles/mtmd.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles --progress-num=92,93,94,95,96,97,98,99,100 "Built target mtmd"
@@ -1290,14 +1290,14 @@ tools/mtmd/CMakeFiles/llama-qwen2vl-cli.dir/clean:
 # Target rules for target tools/mtmd/CMakeFiles/llama-mtmd-cli.dir
 
 # All Build rule for target.
-tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: src/CMakeFiles/llama.dir/all
-tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: common/CMakeFiles/build_info.dir/all
-tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: common/CMakeFiles/common.dir/all
 tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
-tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: tools/mtmd/CMakeFiles/mtmd.dir/all
+tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: src/CMakeFiles/llama.dir/all
+tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: common/CMakeFiles/build_info.dir/all
+tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: common/CMakeFiles/common.dir/all
 tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
+tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/all: tools/mtmd/CMakeFiles/mtmd.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/build.make tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/build.make tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/data/data/com.termux/files/home/Lex/.native_build/CMakeFiles --progress-num=87 "Built target llama-mtmd-cli"
@@ -1329,12 +1329,12 @@ tools/mtmd/CMakeFiles/llama-mtmd-cli.dir/clean:
 # Target rules for target tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir
 
 # All Build rule for target.
-tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: src/CMakeFiles/llama.dir/all
-tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: common/CMakeFiles/build_info.dir/all
-tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: common/CMakeFiles/common.dir/all
 tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: src/CMakeFiles/llama.dir/all
+tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: common/CMakeFiles/build_info.dir/all
+tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: common/CMakeFiles/common.dir/all
 tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/build.make tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/build.make tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/build
@@ -1367,12 +1367,12 @@ tools/cvector-generator/CMakeFiles/llama-cvector-generator.dir/clean:
 # Target rules for target tools/export-lora/CMakeFiles/llama-export-lora.dir
 
 # All Build rule for target.
-tools/export-lora/CMakeFiles/llama-export-lora.dir/all: src/CMakeFiles/llama.dir/all
-tools/export-lora/CMakeFiles/llama-export-lora.dir/all: common/CMakeFiles/build_info.dir/all
-tools/export-lora/CMakeFiles/llama-export-lora.dir/all: common/CMakeFiles/common.dir/all
 tools/export-lora/CMakeFiles/llama-export-lora.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/export-lora/CMakeFiles/llama-export-lora.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/export-lora/CMakeFiles/llama-export-lora.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/export-lora/CMakeFiles/llama-export-lora.dir/all: src/CMakeFiles/llama.dir/all
+tools/export-lora/CMakeFiles/llama-export-lora.dir/all: common/CMakeFiles/build_info.dir/all
+tools/export-lora/CMakeFiles/llama-export-lora.dir/all: common/CMakeFiles/common.dir/all
 tools/export-lora/CMakeFiles/llama-export-lora.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/export-lora/CMakeFiles/llama-export-lora.dir/build.make tools/export-lora/CMakeFiles/llama-export-lora.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/export-lora/CMakeFiles/llama-export-lora.dir/build.make tools/export-lora/CMakeFiles/llama-export-lora.dir/build
@@ -1405,12 +1405,12 @@ tools/export-lora/CMakeFiles/llama-export-lora.dir/clean:
 # Target rules for target tools/fit-params/CMakeFiles/llama-fit-params.dir
 
 # All Build rule for target.
-tools/fit-params/CMakeFiles/llama-fit-params.dir/all: src/CMakeFiles/llama.dir/all
-tools/fit-params/CMakeFiles/llama-fit-params.dir/all: common/CMakeFiles/build_info.dir/all
-tools/fit-params/CMakeFiles/llama-fit-params.dir/all: common/CMakeFiles/common.dir/all
 tools/fit-params/CMakeFiles/llama-fit-params.dir/all: ggml/src/CMakeFiles/ggml-base.dir/all
 tools/fit-params/CMakeFiles/llama-fit-params.dir/all: ggml/src/CMakeFiles/ggml.dir/all
 tools/fit-params/CMakeFiles/llama-fit-params.dir/all: ggml/src/CMakeFiles/ggml-cpu.dir/all
+tools/fit-params/CMakeFiles/llama-fit-params.dir/all: src/CMakeFiles/llama.dir/all
+tools/fit-params/CMakeFiles/llama-fit-params.dir/all: common/CMakeFiles/build_info.dir/all
+tools/fit-params/CMakeFiles/llama-fit-params.dir/all: common/CMakeFiles/common.dir/all
 tools/fit-params/CMakeFiles/llama-fit-params.dir/all: vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/all
 	$(MAKE) $(MAKESILENT) -f tools/fit-params/CMakeFiles/llama-fit-params.dir/build.make tools/fit-params/CMakeFiles/llama-fit-params.dir/depend
 	$(MAKE) $(MAKESILENT) -f tools/fit-params/CMakeFiles/llama-fit-params.dir/build.make tools/fit-params/CMakeFiles/llama-fit-params.dir/build

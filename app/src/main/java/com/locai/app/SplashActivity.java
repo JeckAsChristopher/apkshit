@@ -1,27 +1,35 @@
 package com.locai.app;
 
+import android.Manifest;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
+import android.provider.Settings;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.io.File;
 
 public class SplashActivity extends AppCompatActivity {
 
-    // Minimum sane model file size — 100 MB.
-    // A complete Q4 GGUF is always > 500 MB. This catches partial downloads.
-    private static final long MIN_MODEL_BYTES = 100L * 1024 * 1024;
+    private static final int    REQ_STORAGE   = 101;
+    private static final long   MIN_MODEL_BYTES = 100L * 1024 * 1024; // 100 MB
 
     private TextView    tvStatus;
     private TextView    tvTagline;
@@ -43,7 +51,82 @@ public class SplashActivity extends AppCompatActivity {
         dotRight      = findViewById(R.id.dotRight);
 
         animateLogoIn();
-        new Handler(Looper.getMainLooper()).postDelayed(this::startChecks, 900);
+        new Handler(Looper.getMainLooper()).postDelayed(this::checkPermissions, 900);
+    }
+
+    // ─── Permission gate ─────────────────────────────────────────────────────
+
+    private void checkPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            // Android 11+ — need MANAGE_EXTERNAL_STORAGE for /sdcard access
+            if (!Environment.isExternalStorageManager()) {
+                showPermissionDialog();
+                return;
+            }
+        } else {
+            // Android 6-10 — runtime READ_EXTERNAL_STORAGE
+            if (ContextCompat.checkSelfPermission(this,
+                    Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{
+                            Manifest.permission.READ_EXTERNAL_STORAGE,
+                            Manifest.permission.WRITE_EXTERNAL_STORAGE
+                        }, REQ_STORAGE);
+                return;
+            }
+        }
+        // Permission already granted — proceed
+        startChecks();
+    }
+
+    private void showPermissionDialog() {
+        new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
+                .setTitle("Storage Permission Required")
+                .setMessage(
+                    "LOCAI needs access to your storage to load the AI model from:\n\n" +
+                    ModelDownloader.MODEL_FILE +
+                    "\n\nTap 'Grant Access' and enable 'Allow access to manage all files'.")
+                .setPositiveButton("Grant Access", (d, w) -> {
+                    // Opens the special All Files Access settings page
+                    Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION,
+                            Uri.parse("package:" + getPackageName()));
+                    startActivityForResult(intent, REQ_STORAGE);
+                })
+                .setNegativeButton("Exit", (d, w) -> { finishAffinity(); System.exit(0); })
+                .setCancelable(false)
+                .show();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQ_STORAGE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                startChecks();
+            } else {
+                new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
+                        .setTitle("Permission Denied")
+                        .setMessage("LOCAI cannot run without storage access to load the model.")
+                        .setPositiveButton("Retry", (d, w) -> checkPermissions())
+                        .setNegativeButton("Exit", (d, w) -> { finishAffinity(); System.exit(0); })
+                        .setCancelable(false).show();
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQ_STORAGE) {
+            // Re-check after returning from settings
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R
+                    && Environment.isExternalStorageManager()) {
+                startChecks();
+            } else {
+                showPermissionDialog(); // still not granted
+            }
+        }
     }
 
     // ─── Checks ──────────────────────────────────────────────────────────────
@@ -62,13 +145,10 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         if (model.length() < MIN_MODEL_BYTES) {
-            // Incomplete download — delete it so installer starts fresh
             model.delete();
             showNoWeightsDialog(
-                "Incomplete model file detected (" +
-                StorageChecker.formatBytes(model.length()) + ").\n\n" +
-                "The previous download was interrupted. Please download again."
-            );
+                "Incomplete model file (" + StorageChecker.formatBytes(model.length()) + ").\n\n" +
+                "The previous download was interrupted. Please download again.");
             return;
         }
 
@@ -114,7 +194,6 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void goToInstaller() {
-        // Delete bad/partial model file before going to installer
         File model = new File(ModelDownloader.MODEL_FILE);
         if (model.exists() && model.length() < MIN_MODEL_BYTES) model.delete();
 
@@ -132,11 +211,10 @@ public class SplashActivity extends AppCompatActivity {
         new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
                 .setTitle("No AI weights found")
                 .setMessage(message + "\n\nDownload a model now — needs internet once, " +
-                        "then LOCAI runs fully offline forever.")
+                        "then runs fully offline.")
                 .setPositiveButton("Download model", (d, w) -> goToInstaller())
                 .setNegativeButton("Exit", (d, w) -> { finishAffinity(); System.exit(0); })
-                .setCancelable(false)
-                .show();
+                .setCancelable(false).show();
     }
 
     private void showModelError(String error) {
@@ -144,20 +222,18 @@ public class SplashActivity extends AppCompatActivity {
                 .setTitle("Failed to Load Model")
                 .setMessage(error + "\n\nThe model file may be corrupted. Try reinstalling.")
                 .setPositiveButton("Reinstall Model", (d, w) -> {
-                    // Delete the bad file so installer downloads fresh
                     new File(ModelDownloader.MODEL_FILE).delete();
                     goToInstaller();
                 })
                 .setNegativeButton("Continue anyway", (d, w) -> goToMain())
-                .setCancelable(false)
-                .show();
+                .setCancelable(false).show();
     }
 
     private void showStorageError(long available) {
         new AlertDialog.Builder(this, R.style.Theme_LOCAI_Dialog)
                 .setTitle("\u26A0 Insufficient Storage")
-                .setMessage("LOCAI requires at least 1.6 GB free.\n\n" +
-                        "Available: " + StorageChecker.formatBytes(available) + "\nRequired:  1.6 GB")
+                .setMessage("LOCAI requires at least 1.6 GB free.\n\nAvailable: " +
+                        StorageChecker.formatBytes(available) + "\nRequired:  1.6 GB")
                 .setPositiveButton("Exit", (d, w) -> { finishAffinity(); System.exit(1); })
                 .setCancelable(false).show();
     }

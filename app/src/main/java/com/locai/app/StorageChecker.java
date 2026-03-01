@@ -9,7 +9,7 @@ import android.os.StatFs;
  */
 public class StorageChecker {
 
-    private static final long MIN_BYTES = 1_000L * 1024 * 1024; // 1.6 GB
+    private static final long MIN_BYTES = 1_600L * 1024 * 1024; // 1.6 GB
 
     /** Returns available bytes on external / primary storage. */
     public static long getAvailableBytes() {
