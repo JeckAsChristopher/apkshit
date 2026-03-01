@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LOCAI</string>
+    <string name="tagline">Fully private · Runs offline</string>
+    <string name="hint_message">Message LOCAI…</string>
+    <string name="clear_memory">Clear memory</string>
+    <string name="send">Send</string>
+</resources>

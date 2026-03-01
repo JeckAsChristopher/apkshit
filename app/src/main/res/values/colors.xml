@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Core palette -->
+    <color name="bg_dark">#0D0D14</color>
+    <color name="bg_surface">#13131E</color>
+    <color name="bg_elevated">#1A1A2A</color>
+    <color name="divider">#1E1E2E</color>
+
+    <!-- Accent — electric violet -->
+    <color name="accent">#7C6FFF</color>
+    <color name="accent_dark">#5A4FCC</color>
+    <color name="accent_glow">#3D3580</color>
+
+    <!-- Message bubbles -->
+    <color name="bubble_user">#6C63FF</color>
+    <color name="bubble_ai">#1C1C2E</color>
+
+    <!-- Text -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#8888AA</color>
+    <color name="text_hint">#55556A</color>
+
+    <!-- System -->
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_secondary_light">#AAAACC</color>
+</resources>
