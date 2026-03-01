@@ -1,1 +1,1 @@
-/data/data/com.termux/files/usr/bin/clang++ -fPIC -O3 -DNDEBUG -Xlinker --dependency-file=CMakeFiles/llama-gemma3-cli.dir/link.d "CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o" -o ../../bin/llama-gemma3-cli
+/data/data/com.termux/files/usr/bin/clang++ -fPIC -march=armv8.2-a+dotprod+fp16 -O3 -DNDEBUG -Xlinker --dependency-file=CMakeFiles/llama-gemma3-cli.dir/link.d "CMakeFiles/llama-gemma3-cli.dir/deprecation-warning.cpp.o" -o ../../bin/llama-gemma3-cli

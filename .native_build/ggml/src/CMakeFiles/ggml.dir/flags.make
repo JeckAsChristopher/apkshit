@@ -6,5 +6,5 @@ CXX_DEFINES = -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU -D_GNU_SOURCE -D_XOPEN_SO
 
 CXX_INCLUDES = -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/../include
 
-CXX_FLAGS = -fPIC -O3 -DNDEBUG -std=gnu++17 -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi
+CXX_FLAGS = -fPIC -march=armv8.2-a+dotprod+fp16 -O3 -DNDEBUG -std=gnu++17 -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi
 

@@ -6,5 +6,5 @@ CXX_DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT -DGGML_USE_CPU
 
 CXX_INCLUDES = -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/common/. -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/common/../vendor -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/src/../include -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/../include
 
-CXX_FLAGS = -fPIC -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -pthread
+CXX_FLAGS = -fPIC -march=armv8.2-a+dotprod+fp16 -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -pthread
 

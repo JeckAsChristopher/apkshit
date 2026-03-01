@@ -32,15 +32,17 @@ cmake -S "$CPP_DIR/llama.cpp" -B "$BUILD" \
   -DCMAKE_CXX_COMPILER="$TERMUX_PREFIX/bin/clang++" \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
-  -DCMAKE_C_FLAGS="-fPIC" \
-  -DCMAKE_CXX_FLAGS="-fPIC" \
+  -DCMAKE_C_FLAGS="-fPIC -march=armv8.2-a+dotprod+fp16" \
+  -DCMAKE_CXX_FLAGS="-fPIC -march=armv8.2-a+dotprod+fp16" \
   -DLLAMA_BUILD_TESTS=OFF \
   -DLLAMA_BUILD_EXAMPLES=OFF \
   -DLLAMA_BUILD_SERVER=OFF \
   -DLLAMA_CURL=OFF \
   -DBUILD_SHARED_LIBS=OFF \
   -DGGML_OPENMP=OFF \
-  -DLLAMA_OPENMP=OFF
+  -DLLAMA_OPENMP=OFF \
+  -DGGML_CPU_ARM_ARCH="armv8.2-a+dotprod+fp16" \
+  -DGGML_NATIVE=OFF
 
 cmake --build "$BUILD" --target llama ggml -j$(nproc)
 

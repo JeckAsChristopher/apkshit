@@ -7,11 +7,11 @@ C_DEFINES = -DGGML_COMMIT=\"66d65ec\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_VERSION=\
 
 C_INCLUDES = -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/. -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/../include
 
-C_FLAGS = -fPIC -O3 -DNDEBUG -std=gnu11 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -pthread
+C_FLAGS = -fPIC -march=armv8.2-a+dotprod+fp16 -O3 -DNDEBUG -std=gnu11 -fPIC -Wshadow -Wstrict-prototypes -Wpointer-arith -Wmissing-prototypes -Werror=implicit-int -Werror=implicit-function-declaration -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wdouble-promotion -pthread
 
 CXX_DEFINES = -DGGML_COMMIT=\"66d65ec\" -DGGML_SCHED_MAX_COPIES=4 -DGGML_VERSION=\"0.9.7\" -D_GNU_SOURCE -D_XOPEN_SOURCE=600
 
 CXX_INCLUDES = -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/. -I/data/data/com.termux/files/home/Lex/app/src/main/cpp/llama.cpp/ggml/src/../include
 
-CXX_FLAGS = -fPIC -O3 -DNDEBUG -std=gnu++17 -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -pthread
+CXX_FLAGS = -fPIC -march=armv8.2-a+dotprod+fp16 -O3 -DNDEBUG -std=gnu++17 -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -pthread
 
