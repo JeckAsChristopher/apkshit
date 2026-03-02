@@ -10,6 +10,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
+import java.io.File
 
 class MIDEApplication : Application() {
 
@@ -27,10 +28,26 @@ class MIDEApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+        setupCrashLogger()
         initializeManagers()
         ensureDirectoriesExist()
         applicationScope.launch {
             toolDownloadManager.checkAndDownloadRequiredTools()
+        }
+    }
+
+    private fun setupCrashLogger() {
+        val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()
+        Thread.setDefaultUncaughtExceptionHandler { thread, throwable ->
+            try {
+                val crashFile = File(getExternalFilesDir(null), "crash_log.txt")
+                crashFile.writeText(
+                    "Thread: ${thread.name}\n\n${throwable.stackTraceToString()}"
+                )
+            } catch (e: Exception) {
+                // ignore
+            }
+            defaultHandler?.uncaughtException(thread, throwable)
         }
     }
 
